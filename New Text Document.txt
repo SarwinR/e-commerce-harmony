@@ -1,3 +1,0 @@
-storyboard ui
-scenario how the user interact with the system
-5-6 ieme learn geographic, history , science, math
