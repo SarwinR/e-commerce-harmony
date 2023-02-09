@@ -1,0 +1,90 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .col-left {
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .social {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+  }
+  
+  .social li {
+    margin: 10px 0;
+  }
+
+  .col-right {
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    align-items: right;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .about {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about li {
+    font-size: 14px;
+    margin: 0 15px;
+  }
+  
+  .footer-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-menu li {
+    font-size: 14px;
+    margin: 0 15px;
+  }
+
+  .copyright{
+    background-color: black;
+    color: white;
+  }
+
+  .icon-facebook,
+  .icon-twitter,
+  .icon-instagram,
+  .icon-youtube {
+    font-size: 20px;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .icon-facebook:hover,
+  .icon-twitter:hover,
+  .icon-instagram:hover,
+  .icon-youtube:hover {
+    color: #000;
+  }
+  
+a:link { 
+    color: white;
+    text-decoration: none; }
+a:visited { 
+    color: white;
+    text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
