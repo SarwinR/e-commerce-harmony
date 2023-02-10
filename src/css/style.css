@@ -10,11 +10,6 @@
   flex-wrap: wrap;
   align-items: center;
 }
-.col-center {
-  width: 50%;
-  text-align: center;
-  padding: 20px;
-}
 
 .col-left {
   width: 50%;
@@ -37,10 +32,18 @@
   box-sizing: border-box;
 }
 
+.col-multi{
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  justify-content:center;
+}
+
 .social {
   list-style: none;
   text-align: left;
-  padding: 0;
+  padding: 20px;
 }
 
 .social li {
@@ -103,12 +106,11 @@
 .personal-details-form {
   width: 500px;
   margin: 0 auto;
-  text-align: left;
 }
 
 .personal-details-form input[type="text"],
 .personal-details-form input[type="password"] {
-  width: 90%;
+  width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -117,8 +119,13 @@
   font-size: 16px;
 }
 
+.personal-details-form input[type="checkbox"]{
+  float: left;
+  margin-right: 15px;
+}
+
 .personal-details-form button[type="submit"] {
-  width: 90%;
+  width: 100%;
   padding: 10px;
   background-color: #333;
   color: #fff;
@@ -137,10 +144,7 @@
   font-size: 14px;
   margin-bottom: 20px;
   display: block;
-}
-
-.checkbox-text input[type="checkbox"] {
-  margin-right: 5px;
+  text-align: left;
 }
 
 a:link { 
