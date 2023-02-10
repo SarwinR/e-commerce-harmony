@@ -108,7 +108,14 @@
 	margin: 0 auto;
 }
 
+.error-text {
+	color: #ff0000;
+	font-size: 14px;
+	translate: (-10px);
+}
+
 .personal-details-form input[type="text"],
+.personal-details-form input[type="email"],
 .personal-details-form input[type="password"] {
 	width: 100%;
 	padding: 10px;
@@ -124,7 +131,8 @@
 	margin-right: 15px;
 }
 
-.personal-details-form button[type="submit"] {
+.personal-details-form button[type="submit"],
+.personal-details-form input[type="submit"] {
 	width: 100%;
 	padding: 10px;
 	background-color: #333;
@@ -136,7 +144,8 @@
 	transition: all 0.3s ease-in-out;
 }
 
-.personal-details-form button[type="submit"]:hover {
+.personal-details-form button[type="submit"]:hover,
+.personal-details-form input[type="submit"]:hover {
 	background-color: wheat;
 }
 
