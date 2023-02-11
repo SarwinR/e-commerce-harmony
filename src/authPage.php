@@ -18,6 +18,8 @@ require_once "./module/auth/authentication.php";
 </head>
 
 <body>
+	<object type="text/html" width="100%" height="100px" data="./header.html"></object>
+
 	<div class="body-wrapper">
 		<div class="login-area">
 			<div class="container">

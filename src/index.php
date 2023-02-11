@@ -23,7 +23,7 @@ if (isset($_POST['logout'])) {
 </head>
 
 <body>
-	<h1>HARMONY</h1>
+	<object type="text/html" width="100%" height="100px" data="./header.html"></object>
 
 	<?php
 	if ($loggedin) {
@@ -35,5 +35,10 @@ if (isset($_POST['logout'])) {
 	}
 	?>
 </body>
+
+<footer>
+	<object type="text/html" width="100%" height="400" data="./footer.html"></object>
+</footer>
+
 
 </html>
