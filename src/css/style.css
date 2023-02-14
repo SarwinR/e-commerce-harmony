@@ -138,9 +138,11 @@ a:active {
 	color: #333;
 }
 
-.but-center {
-	display: flex;
-	justify-content: center;
+.quantity-container input[type="number"] {
+	width: 11%;
+}
+
+.but-left {
 	width: 50%;
 	padding: 12px;
 }
@@ -190,7 +192,6 @@ a:active {
 .review-form{
 	background-color: #f0f4f7;
 	padding: 30px;
-	/* padding-right: 100px; */
 	margin-top: 60px;
 	width: 100%;
 }
