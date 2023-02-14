@@ -1,18 +1,34 @@
 .side-panel{
-
+  padding:10px;
   width: 200px;
   position: absolute;
-  min-height: 300px
+  min-height: 300px;
+  border-radius: 20px;
+}
+
+.side-panel h1{
+  text-align: center;
+  font-weight: bold;
+}
+
+.side-panel ul {
+  list-style-type: none;
+}
+
+.side-panel button {
+  color: black;
+  padding: 10px;
 }
 
 .products-container {
-  margin-left: 160px;
+  margin-left: 200px;
   min-height: 300px;
 
-  display: grid;
+  display: inline-grid;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
-  padding: 10px
+
+  padding: 20px 100px 40px 30px;
 }
 
 .product {  
@@ -20,9 +36,23 @@
   text-align: center;
   padding: 20px;
   border: 1px solid #e6e6e6;
+  border-radius: 20px;
+}
+
+.product h3 {
+
+}
+
+.product p {
+
+}
+
+.product button {
+
 }
 
 .product img {
-  width: 50%;
+  width: 90%;
   height: auto;
+  border-radius: 5%;
 }
