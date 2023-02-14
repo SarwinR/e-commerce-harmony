@@ -1,0 +1,28 @@
+.side-panel{
+
+  width: 200px;
+  position: absolute;
+  min-height: 300px
+}
+
+.products-container {
+  margin-left: 200px;
+  min-height: 300px;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 10px
+}
+
+.product {  
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+}
+
+.product img {
+  width: 50%;
+  height: auto;
+}
