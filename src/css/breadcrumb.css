@@ -1,0 +1,23 @@
+.breadcrumb {
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+    height: 50%;
+    background: url(e-commerce-harmony-copy/assets/banner-logopattern.jpg);
+    background-size: cover;
+
+}
+
+.banner-message {
+    color: #c8d1bf;
+    position: absolute;
+    left: 80px;
+    top: 50%;
+
+}
+
+.user-name {
+    position: absolute;
+    left: 80px;
+    top: 60%;
+}
