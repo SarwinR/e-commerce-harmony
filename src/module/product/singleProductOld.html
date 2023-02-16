@@ -139,7 +139,7 @@
                     </li>
                 </ul>
 
-                <form method="post" class="review-form">
+                <form method="post" class="review-form" action="./singleProduct.html">
                     <h4>Add a Review</h4>
                     <div class="review-container">
                         <h6>Your Ratings:</h6>
@@ -153,11 +153,12 @@
                             </span>
                         </div>
                     </div>
-
-                    <textarea placeholder="Type your comments...."></textarea>
-                    <input type="text" placeholder="Type your name...." />
-                    <input type="email" placeholder="Type your email...." />
+                    
+                    <textarea name="comment" placeholder="Type your comments...."></textarea>
+                    <input required="required" type="text" name="username" placeholder="Type your name...." />
+                    <input required="required" type="email" placeholder="Type your email...." />
                     <input type="submit" name="submit" value="Submit" />
+
                 </form>
 
             </div>
