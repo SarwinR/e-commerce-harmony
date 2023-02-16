@@ -2,7 +2,7 @@
 
 require_once "./module/database/database.php";
 
-function getPro($product_id){
+function getProdDetails($product_id){
     
     $sql = "SELECT * FROM products WHERE product_id = ?";
     $result = executeQuery($sql, "i", [$product_id]);
@@ -41,6 +41,28 @@ function getPro($product_id){
 
                 </div>
             </div>";
+}
+
+function getProdDesc($product_id){
+    $sql = "SELECT * FROM products WHERE product_id = ?";
+    $result = executeQuery($sql, "i", [$product_id]);
+    $product = $result->fetch_assoc();
+
+    echo "<div class='col-left'>
+                <h4> Description</h4>
+                <div class='section-divider'></div>
+
+                <h2>{$product['product_title']}</h2>
+                <p>{$product['product_desc']}</p>
+            </div>";
+}
+
+function getProdName($product_id){
+    $sql = "SELECT * FROM products WHERE product_id = ?";
+    $result = executeQuery($sql, "i", [$product_id]);
+    $product = $result->fetch_assoc();
+
+    echo "<title>{$product['product_title']}</title>";
 }
 
 ?>

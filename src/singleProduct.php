@@ -1,11 +1,18 @@
 <?php
-    require_once "./module/product/functions.php";
+
+    require_once "./module/prod/product.php";
+    require_once "./module/prod/reviews.php";
+
 ?>
 
 <!DOCTYPE html>
 <html>
     <head>
-        <title>*Product Name*</title>
+        <?php
+            // Set product name as page title
+            getProdName(1);
+        ?>
+        <!-- <script src=".js/reviews.js" type="text/javascript"></script> -->
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     </head>
@@ -13,20 +20,14 @@
     <body>
         <div class="container">
             <?php
-                getPro(1);
+                getProdDetails(1);
             ?>
         </div>
 
         <div class="container">
-            <div class="col-left">
-                <h4> Description</h4>
-                <div class="section-divider"></div>
-
-                <h2>*Product Name*</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-                    <br> <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-            </div>
+            <?php
+                getProdDesc(1);
+            ?>
         </div>
 
         <div class="container">
@@ -113,7 +114,10 @@
                     </li>
                 </ul>
 
-                <form method="post" class="review-form" action="./singleProduct.html">
+                <!-- should link to an external page with all reviews -->
+                <button class="but-center">Show all reviews</button>
+
+                <form method="post" class="review-form" action="./singleProduct.php">
                     <h4>Add a Review</h4>
                     <div class="review-container">
                         <h6>Your Ratings:</h6>
@@ -128,11 +132,16 @@
                         </div>
                     </div>
                     
-                    <textarea name="comment" placeholder="Type your comments...."></textarea>
-                    <input required="required" type="text" name="username" placeholder="Type your name...." />
-                    <input required="required" type="email" placeholder="Type your email...." />
+                    <textarea required="required" name="comment" placeholder="Type your comment...."></textarea>
+                    <input required="required" type="email" name="email" placeholder="Type your email...." />
+                    
+                    <?php
+                        if(isset($error)){
+                            echo  "<p class='error-text'>" . $error . "</p>";
+                        }
+                    ?>
+                    
                     <input type="submit" name="submit" value="Submit" />
-
                 </form>
 
             </div>

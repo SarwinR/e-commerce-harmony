@@ -130,8 +130,13 @@ a:active {
 }
 
 .star-rating {
-	color: #ffb900;
+	color: grey;
 	font-size: 10px;
+	cursor: pointer;
+}
+
+.star-rating i.fas {
+	color: gold;
 }
 
 .rating-value {
@@ -147,6 +152,16 @@ a:active {
 .but-left {
 	width: 50%;
 	padding: 12px;
+}
+
+.but-center {
+	margin-top: 30px;
+	margin-left: 30%;
+	padding: 7px;
+}
+
+button{
+	background-color: #80B500;
 }
 
 /* Comment */
