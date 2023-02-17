@@ -43,7 +43,7 @@ function getReviews($product_id){
 // must redo with rating
 function submitReview($product_id, $rating, $email, $comment, $current_date){
     $sql = "INSERT INTO reviews (product_id, review_rating, email, review_comment, review_date) VALUES (?, ?, ?, ?, ?)";
-    $result = executeQuery($sql, "iisss", [$product_id, $rating, $email, $comment, $current_date]);
+    $result = executeQuery($sql, "idsss", [$product_id, $rating, $email, $comment, $current_date]);
 }
 
 ?>
