@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Shop</title>
-    <link rel="stylesheet" href="css\shop.css">
-</head>
+	<head>
+		<meta charset="utf-8" />
+		<title>Shop</title>
+		<link rel="stylesheet" href="css\shop.css" />
+		<script src="./js/shop.js"></script>
+	</head>
 
-<body>
-    <object type="text/html" width="100%" height="100px" data="./header.html"></object>
+	<body>
+		<object
+			type="text/html"
+			width="100%"
+			height="100px"
+			data="./header.html"
+		></object>
 
-    <div class="side-panel">
-        <div class="side-Panel-Content">
-            <h1>Categories</h1>
-            <ul>
-                <li><button>
-                    Category 1
-                </button></li>
-                <li><button>
-                    Category 1
-                </button></li>
-                <li><button>
-                    Category 1
-                </button></li>
-                <li><button>
-                    Category 1
-                </button></li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="products-container">
+		<h1 id="cat_title" class="center">DEFAULT CATEGORY</h1>
 
-                <div class="product">
-                    <img src="../assets/placeholder/400x400.png" alt="1">
-                    <h3>Product 1</h3>
-                    <p>Price: 100$</p>
-                    <button>Add to cart</button>
-                </div>
+		<div class="side-panel">
+			<div class="side-Panel-Content">
+				<h1>Categories</h1>
+				<ul>
+					<li>
+						<button onclick="loadProduct('Utility')">
+							Utility
+						</button>
+					</li>
+					<li>
+						<button onclick="loadProduct('Aviation')">
+							Aviation
+						</button>
+					</li>
+					<li>
+						<button onclick="loadProduct(2)">Category 2</button>
+					</li>
+					<li>
+						<button onclick="loadProduct(3)">Category 3</button>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-                <div class="product">
-                    <img src="../assets/placeholder/400x400.png" alt="2">
-                    <h3>Product 2</h3>
-                    <p>Price: 200$</p>
-                    <button>Add to cart</button>
-                </div>
+		<div class="products-container">
+			<div class="product">
+				<img src="../assets/placeholder/400x400.png" alt="1" />
+				<h3>Product 1</h3>
+				<p>Price: 100$</p>
+				<button>Add to cart</button>
+			</div>
 
-                <div class="product">
-                    <img src="../assets/placeholder/400x400.png" alt="3">
-                    <h3>Product 3</h3>
-                    <p>Price: 300$</p>
-                    <button>Add to cart</button>
-                </div>
+			<div class="product">
+				<img src="../assets/placeholder/400x400.png" alt="2" />
+				<h3>Product 2</h3>
+				<p>Price: 200$</p>
+				<button>Add to cart</button>
+			</div>
 
-                <div class="product">
-                    <img src="../assets/placeholder/400x400.png" alt="4">
-                    <h3>Product 4</h3>
-                    <p>Price: 400$</p>
-                    <button>Add to cart</button>
-                </div>
+			<div class="product">
+				<img src="../assets/placeholder/400x400.png" alt="3" />
+				<h3>Product 3</h3>
+				<p>Price: 300$</p>
+				<button>Add to cart</button>
+			</div>
 
-    </div>
-</body>
+			<div class="product">
+				<img src="../assets/placeholder/400x400.png" alt="4" />
+				<h3>Product 4</h3>
+				<p>Price: 400$</p>
+				<button>Add to cart</button>
+			</div>
+		</div>
 
-<footer>
-	<object type="text/html" width="100%" height="400" data="./footer.html"></object>
-</footer>
+		<script>
+			loadProduct("DEFAULT CATEGORY");
+		</script>
+	</body>
 
+	<footer>
+		<object
+			type="text/html"
+			width="100%"
+			height="400"
+			data="./footer.html"
+		></object>
+	</footer>
 </html>
