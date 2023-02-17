@@ -15,27 +15,47 @@
 			data="./header.html"
 		></object>
 
-		<h1 id="cat_title" class="center">DEFAULT CATEGORY</h1>
+		<h1 id="cat_title">DEFAULT CATEGORY</h1>
 
 		<div class="side-panel">
 			<div class="side-Panel-Content">
 				<h1>Categories</h1>
 				<ul>
 					<li>
-						<button onclick="loadProduct('Utility')">
+						<button
+							id="Utility"
+							class="category-button"
+							onclick="loadProduct('Utility'); "
+						>
 							Utility
 						</button>
 					</li>
 					<li>
-						<button onclick="loadProduct('Aviation')">
+						<button
+							id="Aviation"
+							class="category-button"
+							onclick="loadProduct('Aviation');"
+						>
 							Aviation
 						</button>
 					</li>
 					<li>
-						<button onclick="loadProduct(2)">Category 2</button>
+						<button
+							id="Food"
+							class="category-button"
+							onclick="loadProduct('Food');"
+						>
+							Food
+						</button>
 					</li>
 					<li>
-						<button onclick="loadProduct(3)">Category 3</button>
+						<button
+							id="Furniture"
+							class="category-button"
+							onclick="loadProduct('Furniture');"
+						>
+							Furniture
+						</button>
 					</li>
 				</ul>
 			</div>
@@ -72,7 +92,7 @@
 		</div>
 
 		<script>
-			loadProduct("DEFAULT CATEGORY");
+			loadProduct("Utility");
 		</script>
 	</body>
 
