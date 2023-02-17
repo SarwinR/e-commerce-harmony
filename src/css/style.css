@@ -124,25 +124,23 @@ a:active {
 	max-height: 400px;
 }
 
-.rating-container {
+.rating-container{
+	color: #80B500;
 	display: flex;
 	align-items: center;
 }
 
-.star-rating {
-	color: grey;
-	font-size: 10px;
-	cursor: pointer;
+.rating-text{
+	margin-right: 5px;
+	font-size: 15px;
 }
 
-.star-rating i.fas {
-	color: gold;
+.rating-value{
+	font-size: 15px;
 }
 
-.rating-value {
-	margin-left: 8px;
-	font-size: 10px;
-	color: #333;
+.product-title{
+	margin-top: 0px;
 }
 
 .quantity-container input[type="number"] {
@@ -176,6 +174,7 @@ button{
 }
 
 .review-container {
+	display: flex;
 	position: relative;
 }
 
@@ -188,6 +187,11 @@ button{
 
 .comment {
 	overflow: hidden;
+}
+
+.comment .rating-container i{
+	font-style: normal;
+	font-size: 15px;
 }
 
 .comment h6 {
@@ -228,9 +232,18 @@ button{
 
 .review-form .review-container{
 	display: flex;
-	-webkit-box-align: center;
-	align-items: center;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+}
+
+.review-form .review-container label{
+	margin-right: 8px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.review-form .review-container input{
+	padding-left: 5px;
+	width: 45px;
 }
 
 textarea{

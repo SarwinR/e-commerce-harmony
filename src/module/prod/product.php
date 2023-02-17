@@ -14,14 +14,8 @@ function getProdDetails($product_id){
                 </div>
                 <div class='col-left'>
                     <div class='rating-container'>
-                        <span class='star-rating'>
-                            <i class='fas fa-star'></i>
-                            <i class='fas fa-star'></i>
-                            <i class='fas fa-star'></i>
-                            <i class='fas fa-star'></i>
-                            <i class='fas fa-star'></i>
-                        </span>
-                        <span class='rating-value'>4.5</span>
+                        <p class='rating-text'>Rating:</p>
+                        <p class='rating-value'>{$product['product_rating']}</p>
                     </div>
                         
                     <h3 class='product-title'>{$product['product_title']}</h3>

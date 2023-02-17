@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 10, 2023 at 07:13 PM
+-- Generation Time: Feb 17, 2023 at 01:28 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -20,6 +20,53 @@ SET time_zone = "+00:00";
 --
 -- Database: `harmony`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `products`
+--
+
+CREATE TABLE `products` (
+  `product_id` int(10) NOT NULL,
+  `cat_title` text NOT NULL,
+  `product_title` text NOT NULL,
+  `product_img` text NOT NULL,
+  `product_price` int(10) NOT NULL,
+  `product_desc` text NOT NULL,
+  `product_rating` decimal(10,1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`product_id`, `cat_title`, `product_title`, `product_img`, `product_price`, `product_desc`, `product_rating`) VALUES
+(1, 'Utility', 'Pasta Straw', 'a4 logo.png', 125, 'Starw made up with pasta', '3.9'),
+(2, 'Utility', 'Farhaan', 'farhaan.png', 1, 'dumb', '0.0'),
+(3, 'Aviation', 'Levyn On Plane', 'levyn.png', 10, 'Hehe', '0.2');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `reviews`
+--
+
+CREATE TABLE `reviews` (
+  `review_id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `review_rating` decimal(10,1) NOT NULL,
+  `email` varchar(128) NOT NULL,
+  `review_comment` text NOT NULL,
+  `review_date` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `reviews`
+--
+
+INSERT INTO `reviews` (`review_id`, `product_id`, `review_rating`, `email`, `review_comment`, `review_date`) VALUES
+(1, 1, '4.9', '00@00', 'Very nice product to have', 'Febuary 16, 2023');
 
 -- --------------------------------------------------------
 
@@ -67,6 +114,12 @@ INSERT INTO `users` (`email`, `firstName`, `lastName`, `password`) VALUES
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`product_id`);
 
 --
 -- Indexes for table `tokens`
