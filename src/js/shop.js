@@ -20,5 +20,6 @@ function loadProduct(category) {
 }
 
 function loadIndividualProduct(productID) {
-	window.location.href = "https://www.google.com/search?q=" + productID;
+	// window.location.href = "http://localhost/e-commerce-harmony/src/singleProduct.php?product_id=" + productID;
+	window.location.href = "./singleProduct.php?product_id=" + productID;
 }

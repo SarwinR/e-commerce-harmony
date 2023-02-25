@@ -8,10 +8,9 @@ function getProdDetails($product_id){
     $result = executeQuery($sql, "i", [$product_id]);
     $product = $result->fetch_assoc();
 
-    // <img src='{$product['product_img']}' alt='album' class='album' />
     echo "<div class='col-multi'>
                 <div class='section'>
-                    <img src='../assets/" . $product['product_img'] . "' alt='album' class='album' />
+                    <img src='../assets/product_img/" . $product['product_img'] . "' alt='album' class='album' />
                 </div>
                 <div class='col-left'>
                     <div class='rating-container'>

@@ -3,29 +3,28 @@
     require_once "./module/prod/product.php";
     require_once "./module/prod/reviews.php";
 
+    $product_id = $_GET['product_id'];
 ?>
 
 <!DOCTYPE html>
 <html>
     <head>
         <?php
-            // Set product name as page title
-            getProdName(1);
+            getProdName($product_id);
         ?>
-        <!-- <script src=".js/reviews.js" type="text/javascript"></script> -->
         <link rel="stylesheet" href="css/style.css" />
     </head>
 
     <body>
         <div class="container">
             <?php
-                getProdDetails(1);
+                getProdDetails($product_id);
             ?>
         </div>
 
         <div class="container">
             <?php
-                getProdDesc(1);
+                getProdDesc($product_id);
             ?>
         </div>
 
@@ -35,10 +34,10 @@
                 <div class="section-divider"></div>
 
                 <?php
-                    getReviews(1);
+                    getReviews($product_id);
+                    
+                    echo "<form method='post' class='review-form' action='./module/prod/reviews.php?product_id=" . $product_id . "'>";
                 ?>
-
-                <form method="post" class="review-form" action="./singleProduct.php">
                     <h4>Add a Review</h4>
                     <div class="review-container">
                         <label for="rating">Your Rating: </label>
