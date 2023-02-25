@@ -33,6 +33,8 @@ if (isset($_POST['logout'])) {
 	} else {
 		echo "<a href='./authPage.php'>Login/Register</a>";
 	}
+
+	echo "<br><a href = './singleProduct.php'>Product</a>"
 	?>
 </body>
 
