@@ -34,7 +34,7 @@ if (isset($_POST['logout'])) {
 		echo "<a href='./authPage.php'>Login/Register</a>";
 	}
 
-	echo "<br><a href = './singleProduct.php'>Product</a>"
+	echo "<br><a href = './shop.html'>All Products</a>"
 	?>
 </body>
 
