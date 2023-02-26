@@ -7,6 +7,10 @@ body {
 	background-color: #5555559d;
 }
 
+.section{
+ align-content: left;
+}
+
 .social {
 	list-style: none;
 	text-align: left;
