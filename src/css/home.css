@@ -19,16 +19,23 @@
     }  
   
   /* left text */
-  .left {
+  .center-text {
     position: absolute;
     top: 8px;
-    left: 16px;
+    left: 110px;
     color: black;
   }
   
 #titles {
 	font-size: 30px;
 	background-color: #88bc52;
+	color: #ffffff;
+	padding: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+#background-text{
+    font-size: 60px;
 	color: #ffffff;
 	padding: 25px;
 	font-weight: bold;
