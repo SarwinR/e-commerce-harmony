@@ -63,6 +63,44 @@
 	border-radius: 20px;
 }
 
+
+
+
+.hyper-button{
+    margin: 0;
+    position: relative;
+    left: 170%;
+    padding-top: 5px;
+}
+
+button{
+    background-color: #ffffff;
+    border: 2px solid #88bc52;
+	border-radius: 20px;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+#shop-more-button{
+    background-color: #ffffff;
+    border: 2px solid #88bc52;
+	border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    width: 250px;
+}
+#shop-more-button:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
 .product h3 {
 }
 
