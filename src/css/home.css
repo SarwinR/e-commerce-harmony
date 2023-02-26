@@ -136,3 +136,17 @@ button:hover {
 	border: 2px solid #88bc52;
 	border-radius: 20px;
 }
+
+/* scroll bar styling */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d1e5ff
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#88bc52, #0f7206);
+    border-radius: 10px;
+}
