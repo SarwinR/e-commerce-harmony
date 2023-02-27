@@ -15,7 +15,8 @@
 
   img {  
     width: 100%;  
-    max-height: 545px;  
+    max-height: auto;  
+	padding-top:3px;
     }  
   
   /* left text */
