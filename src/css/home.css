@@ -1,3 +1,8 @@
+body{
+	align-items: center;
+	justify-content:center;
+	display:contents;
+}
 #homeIntro {
 	font-size: 30px;
 	background-color: #88bc52;
