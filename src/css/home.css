@@ -145,7 +145,7 @@ button:hover {
 
 /* scroll bar styling */
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -153,6 +153,6 @@ button:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(#88bc52, #0f7206);
+    background: #7599ad;
     border-radius: 10px;
 }
