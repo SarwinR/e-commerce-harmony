@@ -11,6 +11,23 @@ body {
     margin-bottom: 20px;
   }
   
+  .sidebar img{
+      width:190px;
+      height:35px;
+      padding-bottom: 4px;
+  }
+  .upper-border-sidebar{
+    border-top: 3px solid #ffffff;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+  .bottom-border-sidebar{
+    border-top: 3px solid #ffffff;
+    width: 100%;
+    margin-top: 120%;
+  }
+  
+  
 .sidebar {
     background-color: #BA926E;
     height: 100vh;
@@ -27,11 +44,13 @@ body {
     
 }
 
+
 .sidebar a {
     display: block;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 16px;
     text-decoration: none;
+    font-size: 20px;
     
 }
 
@@ -79,24 +98,43 @@ body {
     .products-container {
         min-height: 300px;
     
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 20px;
-    
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        display:inline;
         align-items: center;
-    
         padding-top:20px;
     }
     .product {
         background-color: #ffffff;
-        text-align: center;
+        text-align: left;
         padding: 20px;
-        border: 2px solid #B88C5B;
+        display:flex;
+        margin-bottom: 5px;
+       
     }
     
     .product img {
         width: 200px;
         height: 200px;
+        padding-right: 40px;
 
     }
+
+    .border{
+        border: 1px solid #b88d5b91;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+
+    /* scroll bar styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d1e5ff
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3c503f;
+    border-radius: 10px;
+}
