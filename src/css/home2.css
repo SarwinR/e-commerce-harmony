@@ -63,8 +63,18 @@ body {
 }
 .background-container img {  
     width: 100%;  
-    max-height: 660px;  
+    max-height: 670px;  
     }  
+
+
+    #titles {
+        font-size: 30px;
+        background-color: #B88C5B;
+        color: #ffffff;
+        padding: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
 
     .products-container {
         min-height: 300px;
