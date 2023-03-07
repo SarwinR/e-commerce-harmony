@@ -134,6 +134,9 @@ body {
         background-image: linear-gradient(to left, rgba(255,0,0,0), #b88d5b21);
         /* display:flex;  */
     }
+    .testimonials-container{
+        padding-bottom: 30px;
+    }
 
     .testimonial h5{
         text-align: right;
