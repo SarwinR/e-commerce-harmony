@@ -124,6 +124,30 @@ body {
         margin-right: 40px;
     }
 
+    .testimonial {
+        background-color: #ffffff;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #b88d5b91;
+        border-radius: 20px;
+        background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,1));
+        /* display:flex;  */
+    }
+
+    .testimonial h5{
+        text-align: right;
+        padding:0px;
+        margin: 0px;
+    }
+
+    .testimonial img{
+        display:flex;
+    }
+    
+
+
+
+
 
     /* scroll bar styling */
 ::-webkit-scrollbar {
