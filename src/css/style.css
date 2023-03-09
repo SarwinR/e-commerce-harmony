@@ -16,6 +16,7 @@
 	width: 50%;
 	text-align: left;
 	box-sizing: border-box;
+	padding-left: 7px;
 }
 
 .col-right {
