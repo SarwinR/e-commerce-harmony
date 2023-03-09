@@ -151,7 +151,7 @@ body {
     button{
         background-color: #ffffff;
         border: 2px solid #b88d5b91;
-        border-radius: 20px;
+        border-radius: 5px;
         text-align: center;
         transition-duration: 0.4s;
     }

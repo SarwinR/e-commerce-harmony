@@ -82,7 +82,7 @@ body{
 button{
     background-color: #ffffff;
     border: 2px solid #88bc52;
-	border-radius: 20px;
+	border-radius: 5px;
     text-align: center;
     transition-duration: 0.4s;
 }
@@ -95,7 +95,7 @@ button:hover {
 #shop-more-button{
     background-color: #ffffff;
     border: 2px solid #88bc52;
-	border-radius: 20px;
+	border-radius: 10px;
     text-align: center;
     font-size: 20px;
     width: 250px;
