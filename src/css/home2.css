@@ -180,9 +180,14 @@ body {
         width: 35px;
     }
 
+    .cart-button{
+        margin-left: 15px;
+    }
+
 
     .icons{
-      padding:4px;
+        display:flex;
+      padding:15px;
     }
 
     

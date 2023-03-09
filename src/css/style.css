@@ -15,14 +15,12 @@
 .col-left {
 	width: 50%;
 	text-align: left;
-	padding: 30px;
 	box-sizing: border-box;
 }
 
 .col-right {
 	width: 50%;
 	text-align: right;
-	padding: 30px;
 	box-sizing: border-box;
 }
 
