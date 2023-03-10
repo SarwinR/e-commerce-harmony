@@ -198,51 +198,29 @@ body {
     border-radius: 10px;
 }
 
-
-.cat-panel {
-	padding: 0px;
-	width: 200px;
-	position: relative;
-	float: left;
-	height: 100%;
-	background-color: #88bc52;
-	border-radius: 20px;
-	text-align: center;
+.navbar {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
 }
 
-.cat-panel ul {
-	list-style-type: none;
-	display: block;
-	text-align: left;
+.navbar a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 40px;
+    transition: all .50s ease;
+    color: black;
 }
 
-.cat-panel li:not(:last-child) {
-	margin-bottom: 5px;
+.navbar a:hover {
+    color: #ffffff;
 }
 
-.cat-panel button {
-	background-color: rgb(255, 255, 255);
-	border-radius: 8px;
-	width: 75%;
-	border-width: 0;
-	color: #000000;
-	cursor: pointer;
-	display: inline-block;
-	font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
-		sans-serif;
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 20px;
-	list-style: none;
-	margin: 0;
-	padding: 10px 12px;
-	text-align: center;
+.main{
+    padding-right: 3%;
 }
 
-.cat-panel button:disabled {
-	background-color: #88bc52;
-	color: #ffffff;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #ffffff;
+.navbar a.active {
+    color: #ffffff;
 }

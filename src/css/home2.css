@@ -205,3 +205,23 @@ body {
     background: #3c503f;
     border-radius: 10px;
 }
+
+
+.navbar {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 40px;
+    transition: all .50s ease;
+    color: black;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+}
