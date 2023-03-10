@@ -202,25 +202,10 @@ body {
     display: flex;
     list-style: none;
     text-decoration: none;
+    background-color: #B88C5B;
+    height:40px;
+    align-items: center;
 }
-
-.navbar a {
-    font-size: 1.1rem;
-    font-weight: 500;
-    padding: 5px 0;
-    margin: 0px 40px;
-    transition: all .50s ease;
-    color: black;
-}
-
-.navbar a:hover {
-    color: #ffffff;
-}
-
-.main{
-    padding-right: 3%;
-}
-
-.navbar a.active {
-    color: #ffffff;
+.navbar li{
+    padding: 10px;
 }
