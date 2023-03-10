@@ -148,6 +148,20 @@ body {
         background-color: #b88d5b91;
         color: white;
     }
+
+    .navbar button{
+        background-color: #b88d5b91;
+        border: 2px solid white;
+        border-radius: 5px;
+        text-align: center;
+        transition-duration: 0.4s;
+        color:#ffffff;
+    }
+    .navbar button:hover{
+        background-color: white;
+        color: rgb(0, 0, 0);
+        border-color: #b88d5b91;
+    }
     
     #shop-more-button{
         background-color: #ffffff;
@@ -206,3 +220,4 @@ body {
 .navbar li{
     padding: 10px;
 }
+
