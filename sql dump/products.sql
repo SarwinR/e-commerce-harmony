@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 10, 2023 at 10:40 AM
+-- Generation Time: Mar 10, 2023 at 10:39 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -60,71 +60,6 @@ INSERT INTO `products` (`product_id`, `cat_title`, `product_title`, `product_img
 (20, 'Utensils', 'Greenly Wood 200 Pack Disposable Wooden Utensils Set | All Natural Birchwood Biodegradable Compostable Cutlery (100 Forks, 50 Spoons, 50 Knives)', '20.png', 600, 'ECO-FRIENDLY - made of 100% biodegradable and compostable birchwood<br><br>\r\nNO PLASTIC USED FOR PACKAGING - We did our best to make it as GREENLY as possible<br><br>\r\nCONVENIENT 3 COMPARTMENT BOX - Use and Store with EASE<br><br>\r\nSIMPLE, NATURAL AND ELEGANT - modern looking wooden utensils for any event<br><br>\r\n200 VALUE PACK - 100 Forks, 50 Spoons and 50 Knives (6 inch lenght). We\'ve noticed, that you always run out of forks first', '4.2'),
 (21, 'Bags', 'UNNI 100% Compostable Bags, 2.6 Gallon, 9.84 Liter, 100 Count, Extra Thick 0.71 Mil, Samll Kitchen Food Scrap Waste Bags, ASTM D6400, US BPI and Europe OK Compost Home Certified, San Francisco', '21.png', 250, '2.6 Gallon / 9.84 Liter capacity; Size: 16.3 in x 16.5 in x 0.71 Mils; 100 Bags Per Roll<br><br>\r\nCERTIFIED COMPOSTABLE IN U.S. & EUROPE: Certified by the Biodegradable Products Institute (BPI) under US standard ASTM D6400. Certified OK Compost Home under European standard EN 13432 by Vinçotte and Tüv Austria. OK Compost Home certification guarantees 100% BIODEGRADABILITY IN HOME COMPOSTING facilities.<br><br>\r\nHIGHEST BIOBASED CONTENT: UNNI Compostable Bags are made from plant starches and contain NO polyethylene. Bags are durable, nontoxic, easy to use and great for the environment.\r\nUSAGE & STORAGE: Avoid excessive heat; store Compostable Bags in a cool, dry place and use within one year of purchase. Purchase only as many as you can use in 9 months.<br><br>\r\nUNNI compostable bags are the ethical choice for a cleaner environment and an ECO-FRIENDLY future. Thank you taking care of our planet for FUTURE GENERATIONS by replacing plastic with our sustainably manufactured, compostable bags. Together, U ‘n’ I make Earth a better place.', '5.0');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `reviews`
---
-
-CREATE TABLE `reviews` (
-  `review_id` int(11) NOT NULL,
-  `product_id` int(11) NOT NULL,
-  `review_rating` decimal(10,1) NOT NULL,
-  `email` varchar(128) NOT NULL,
-  `review_comment` text NOT NULL,
-  `review_date` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `reviews`
---
-
-INSERT INTO `reviews` (`review_id`, `product_id`, `review_rating`, `email`, `review_comment`, `review_date`) VALUES
-(1, 1, '4.9', '00@00', 'Very nice product to have', 'Febuary 16, 2023');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tokens`
---
-
-CREATE TABLE `tokens` (
-  `email` varchar(128) NOT NULL,
-  `token` varchar(64) NOT NULL,
-  `creation_timestamp` int(12) NOT NULL DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `tokens`
---
-
-INSERT INTO `tokens` (`email`, `token`, `creation_timestamp`) VALUES
-('po@po', '8c7018e4937480029c86dcbc719367137da5757939841f4f2da36a026d44e8dc', 1676052520);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `users`
---
-
-CREATE TABLE `users` (
-  `email` varchar(128) NOT NULL,
-  `firstName` varchar(64) NOT NULL,
-  `lastName` varchar(64) NOT NULL,
-  `password` varchar(64) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`email`, `firstName`, `lastName`, `password`) VALUES
-('00@00', '000', '000', '$2y$10$naNUYWMlAPDygvLXYUxG5u/uz1I.WFOlo1zm82IxveislNUbCSYli'),
-('as@as', 'asas', 'asas', '$2y$10$KUBkZGlocDKrE0l1q/EJIOibmWMIrALYjI4yFE3NIk8qnufwbOYKi'),
-('coke@coke.com', 'farhaan', 'coke', '$2y$10$M1ioplpIi/BNgw4KJWk7/OB75G9FJooNZ14GDU8FM57IIzSQGEcrO'),
-('po@po', 'popo', 'popo', '$2y$10$AqCmzFgZQ1JqiBMk1intSeBF.7bQubP3mjyF07w90FMPksuKVnGhG'),
-('sarwin02@gmail.com', 'Sarwin', 'Rajiah', '$2y$10$9hSZaGIIMIYSaIOkmBw87uwoGXIkIr85GTBSS88ogUYYktHVfO3hK');
-
 --
 -- Indexes for dumped tables
 --
@@ -134,20 +69,6 @@ INSERT INTO `users` (`email`, `firstName`, `lastName`, `password`) VALUES
 --
 ALTER TABLE `products`
   ADD PRIMARY KEY (`product_id`);
-
---
--- Indexes for table `tokens`
---
-ALTER TABLE `tokens`
-  ADD PRIMARY KEY (`email`,`token`);
-
---
--- Indexes for table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`email`),
-  ADD UNIQUE KEY `email` (`email`),
-  ADD UNIQUE KEY `email_2` (`email`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
