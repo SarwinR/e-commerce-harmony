@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 17, 2023 at 04:28 PM
+-- Generation Time: Mar 11, 2023 at 02:41 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -20,6 +20,20 @@ SET time_zone = "+00:00";
 --
 -- Database: `harmony`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `c_id` int(11) NOT NULL,
+  `firstName` varchar(500) NOT NULL,
+  `lastName` varchar(500) NOT NULL,
+  `email` varchar(500) NOT NULL,
+  `comment` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -109,6 +123,12 @@ INSERT INTO `users` (`email`, `firstName`, `lastName`, `password`) VALUES
 --
 
 --
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`c_id`);
+
+--
 -- Indexes for table `products`
 --
 ALTER TABLE `products`
@@ -137,6 +157,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `products`
