@@ -20,10 +20,13 @@ if (isset($_POST['logout'])) {
 <head>
 	<title>Harmony</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="./js/cart.js"></script>
 </head>
 
 <body>
 	<object type="text/html" width="100%" height="100px" data="./header.html"></object>
+
+	<button onclick="add2Cart(5)">debug</button>
 
 	<?php
 	if ($loggedin) {
