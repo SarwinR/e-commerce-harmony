@@ -11,6 +11,14 @@
 	</head>
     
 	<body>
+
+    <object
+			type="text/html"
+			width="100%"
+			height="100px"
+			data="./header.html"
+		></object>
+
 		<div class="container">
             <div class="col-center">
                 <form method="post" class="contact-form" action="./module/contact/contact.php">
@@ -24,6 +32,16 @@
                 </form>
             </div>
         </div>
+
+        <footer>
+		<object
+			type="text/html"
+			width="100%"
+			height="310px"
+			data="./footer.html"
+		></object>
+	</footer>
+    
 	</body>
 
 </html>
