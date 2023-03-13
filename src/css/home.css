@@ -71,9 +71,7 @@ body{
 
 
 .hyper-button{
-	align-items: center;
-    display: flex;
-    padding-left: 550px;
+	text-align: center;
 }
 
 
