@@ -1,0 +1,158 @@
+body{
+	align-items: center;
+	justify-content:center;
+	display:contents;
+}
+#homeIntro {
+	font-size: 30px;
+	background-color: #88bc52;
+	color: #ffffff;
+	padding: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.background-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  img {  
+    width: 100%;  
+    max-height: 550px;  
+	padding-top:3px;
+    }  
+  
+  /* left text */
+  .center-text {
+    position: absolute;
+    top: 8px;
+    left: 110px;
+    color: black;
+  }
+  
+#titles {
+	font-size: 30px;
+	background-color: #88bc52;
+	color: #ffffff;
+	padding: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+#background-text{
+    font-size: 60px;
+	color: #ffffff;
+	padding: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+  
+
+.products-container {
+	min-height: 300px;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	align-items: center;
+
+	padding: 20px 20px;
+}
+.product {
+	background-color: #ffffff;
+	text-align: center;
+	padding: 20px;
+	border: 2px solid #88bc52;
+	border-radius: 20px;
+}
+
+
+
+
+.hyper-button{
+    margin: 0;
+    position: relative;
+    left: 170%;
+    padding-top: 5px;
+}
+
+button{
+    background-color: #ffffff;
+    border: 2px solid #88bc52;
+	border-radius: 20px;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+#shop-more-button{
+    background-color: #ffffff;
+    border: 2px solid #88bc52;
+	border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    width: 250px;
+}
+#shop-more-button:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+.product h3 {
+}
+
+.product p {
+}
+
+.product button {
+}
+
+.product img {
+	width: 200px;
+	height: 200px;
+	border-radius: 5%;
+}
+
+
+.testimonials-container {
+	min-height: 300px;
+
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	align-items: center;
+
+	padding: 20px 20px;
+}
+.testimonial {
+	background-color: #ffffff;
+	text-align: center;
+	padding: 20px;
+	border: 2px solid #88bc52;
+	border-radius: 20px;
+}
+
+/* scroll bar styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d1e5ff
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7599ad;
+    border-radius: 10px;
+}

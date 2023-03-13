@@ -39,7 +39,7 @@ if (isset($_POST['logout'])) {
 </body>
 
 <footer>
-	<object type="text/html" width="100%" height="400" data="./footer.html"></object>
+	<object type="text/html" width="100%" height="200px" data="./footer.html"></object>
 </footer>
 
 

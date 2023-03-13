@@ -15,14 +15,13 @@
 .col-left {
 	width: 50%;
 	text-align: left;
-	padding: 30px;
 	box-sizing: border-box;
+	padding-left: 7px;
 }
 
 .col-right {
 	width: 50%;
 	text-align: right;
-	padding: 30px;
 	box-sizing: border-box;
 }
 
@@ -282,5 +281,72 @@ textarea{
 }
 
 .review-form input[type="submit"]:hover {
+	background-color: wheat;
+}
+
+.contact-form{
+	background-color: #88bc52;
+	padding: 30px;
+	margin-top: 60px;
+	width: 100%;
+	border-radius: 20px;
+}
+
+.contact-form h4{
+	margin-top: 0px;
+	margin-bottom: 30px;
+	font-size: 25px;
+}
+
+.contact-form input[type="text"]{
+	background-color: #fff;
+	border: 2px solid;
+	border-color: #f0f4f7;
+	height: 50px;
+	box-shadow: none;
+	padding-left: 20px;
+	font-size: 16px;
+	color: #071c1f;
+	width: 42%;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	padding-right: 40px;
+}
+
+.contact-form input[type="email"],
+textarea{
+	background-color: #fff;
+	border: 2px solid;
+	border-color: #f0f4f7;
+	height: 50px;
+	box-shadow: none;
+	padding-left: 20px;
+	font-size: 16px;
+	color: #071c1f;
+	width: 92%;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	padding-right: 40px;
+}
+
+.contact-form textarea{
+	resize: vertical;
+	padding: 15px 20px;
+	min-height: 300px;
+}
+
+.contact-form input[type="submit"] {
+	padding: 10px;
+	margin-left: 5px;
+	background-color: #333;
+	color: #fff;
+	border: 0;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.contact-form input[type="submit"]:hover {
 	background-color: wheat;
 }
