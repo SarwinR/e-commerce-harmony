@@ -2,8 +2,9 @@
 
 require_once "./module/database/database.php";
 
-function getProdDetails($product_id){
-    
+function getProdDetails($product_id)
+{
+
     $sql = "SELECT * FROM products WHERE product_id = ?";
     $result = executeQuery($sql, "i", [$product_id]);
     $product = $result->fetch_assoc();
@@ -28,16 +29,27 @@ function getProdDetails($product_id){
                     <div class='quantity-container'>
                         <label for='quantity'>Quantity:</label>
                         <input type='number' id='quantity' name='quantity' min='1' value='1'>
+
+                    <script>
+                    
+                    function getQtyAndAdd2Cart(){
+                        var qty = document.getElementById('quantity').value;
+                        add2Cart(" . $product_id . ", qty);
+                    }
+
+                    </script>
+
                     </div>
                     <div class='but-left'>
-                        <button>Add to Cart</button>
+                        <button onclick='getQtyAndAdd2Cart()'>Add to Cart</button>
                     </div>
 
                 </div>
             </div>";
 }
 
-function getProdDesc($product_id){
+function getProdDesc($product_id)
+{
     $sql = "SELECT * FROM products WHERE product_id = ?";
     $result = executeQuery($sql, "i", [$product_id]);
     $product = $result->fetch_assoc();
@@ -51,12 +63,11 @@ function getProdDesc($product_id){
             </div>";
 }
 
-function getProdName($product_id){
+function getProdName($product_id)
+{
     $sql = "SELECT * FROM products WHERE product_id = ?";
     $result = executeQuery($sql, "i", [$product_id]);
     $product = $result->fetch_assoc();
 
     echo "<title>{$product['product_title']}</title>";
 }
-
-?>

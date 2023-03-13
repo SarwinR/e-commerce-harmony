@@ -14,6 +14,7 @@ $product_id = $_GET['product_id'];
     getProdName($product_id);
     ?>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/cart.js"></script>
 </head>
 
 <body>

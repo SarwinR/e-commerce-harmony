@@ -1,40 +1,54 @@
 // cookies are stored in this format productID.quantity,productID.quantity,...
 
-function add2Cart(productID) {
+function add2Cart(productID, quantity = 1) {
 	var cartString = getCookie("cart");
 	var cart = {};
 
 	// cart is empty
 	if (cartString == "") {
-		cart[productID] = 1;
+		cart[productID] = quantity;
 	}
 	// cart is not empty
 	else {
 		// populating the dictionary of cart items
-		cartItems = cartString.split(",");
-		cartItems.forEach((element) => {
-			item = element.split(".");
-			if (item[0] != "") cart[item[0]] = item[1];
-		});
+		cart = string2Dict(cartString);
 
 		// the item to be added is not in the cart
 		if (cart[productID] == undefined) {
-			cart[productID] = 1;
+			cart[productID] = quantity;
 		}
 		// the item to be added is already in the cart
 		else {
-			cart[productID] = parseInt(cart[productID]) + 1;
+			cart[productID] = parseInt(cart[productID]) + parseInt(quantity);
 		}
 	}
 
 	// converting the dictionary to a string
-	var cartString = "cart=";
-	for (var key in cart) {
-		cartString += key + "." + cart[key] + ",";
-	}
+	var cartString = "cart=" + dict2String(cart);
 
 	setCookie(cartString, 30);
 	alert("Item added to cart");
+}
+
+function string2Dict(string) {
+	var cart = {};
+	cartItems = string.split(",");
+	cartItems.forEach((element) => {
+		item = element.split(".");
+		if (item[0] != "") {
+			if (parseInt(item[1] > 0)) cart[item[0]] = item[1];
+		}
+	});
+
+	return cart;
+}
+
+function dict2String(dict) {
+	var str = "";
+	for (var key in dict) {
+		if (dict[key] > 0) str += key + "." + dict[key] + ",";
+	}
+	return str;
 }
 
 function setCookie(cookieString, days) {
