@@ -18,3 +18,5 @@ if ($result->num_rows == 0) {
             </div></button>";
     }
 }
+
+# <button onclick='add2Cart(" . $row["product_id"] . ")'>Add to cart</button>

@@ -34,6 +34,7 @@ function add2Cart(productID) {
 	}
 
 	setCookie(cartString, 30);
+	alert("Item added to cart");
 }
 
 function setCookie(cookieString, days) {
