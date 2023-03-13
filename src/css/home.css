@@ -70,14 +70,13 @@ body{
 }
 
 
-
-
 .hyper-button{
-    margin: 0;
-    position: relative;
-    left: 170%;
-    padding-top: 5px;
+	align-items: center;
+    display: flex;
+    padding-left: 550px;
 }
+
+
 
 button{
     background-color: #ffffff;
