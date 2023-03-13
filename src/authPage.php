@@ -65,7 +65,12 @@ require_once "./module/auth/authentication.php";
 </body>
 
 <footer>
-	<object type="text/html" width="100%" height="400" data="./footer.html"></object>
-</footer>
+		<object
+		type="text/html"
+		width="100%"
+		height="310px"
+		data="./footer.html"
+		></object>
+	</footer>
 
 </html>
