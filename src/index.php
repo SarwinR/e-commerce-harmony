@@ -25,7 +25,7 @@ if (isset($_POST['logout'])) {
 <body>
   <object type="text/html" width="100%" height="100px" data="./header.html"></object>
 
-  <a href="./cart.html">cart</a>
+  <a href="./cart.php">cart</a>
 
   <?php
   if ($loggedin) {

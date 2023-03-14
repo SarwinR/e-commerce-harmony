@@ -1,6 +1,6 @@
 // cookies are stored in this format productID.quantity,productID.quantity,...
 
-function add2Cart(productID, quantity = 1) {
+function add2Cart(productID, quantity = 1, msg="Item added to cart ") {
 	var cartString = getCookie("cart");
 	var cart = {};
 
@@ -27,7 +27,7 @@ function add2Cart(productID, quantity = 1) {
 	var cartString = "cart=" + dict2String(cart);
 
 	setCookie(cartString, 30);
-	alert("Item added to cart");
+	alert(msg);
 }
 
 function string2Dict(string) {
@@ -36,7 +36,7 @@ function string2Dict(string) {
 	cartItems.forEach((element) => {
 		item = element.split(".");
 		if (item[0] != "") {
-			if (parseInt(item[1] > 0)) cart[item[0]] = item[1];
+			if (parseInt(item[1]) > 0) cart[item[0]] = item[1];
 		}
 	});
 

@@ -1,3 +1,8 @@
+<?php
+
+require_once './module/cart/items.php';
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -6,10 +11,9 @@
   <title>Harmony Cart</title>
   <link rel="stylesheet" href="./css/cart.css">
   <link rel="stylesheet" href="css/Button.css">
+  <script src="./js/cart.js"></script>
 </head>
 <body>
-  
-  <?php include 'nav.php'; ?>
   
   <iframe src="header.html" width="100%" height="100px" frameborder="0"></iframe>
 
@@ -22,24 +26,16 @@
       <th>Price</th>
       <th>Action</th>
     </tr>
-    <?php foreach ($products as $product) { ?>
-      <tr>
-        <td><?php echo $product['name']; ?></td>
-        <td><img src="<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>" width="250" height="200"></td>
-        <td>        <div class="counter">
-                    <button class="minus-btn">-</button>
-                    <span class="quantity">0</span>
-                    <button class="plus-btn">+</button>
-                    </div></td>
 
+    <?php 
+    $total_price = 0;
 
-        <td><?php echo $product['price']; ?></td>
+    getCartItems();
 
-        <td><button onclick="removeProduct()">Remove</button></td>
+    // $products = _test_getCartItems();
+    // $products = getCartItems();
+    ?>
 
-
-      </tr>
-    <?php } ?>
   </table>
   <div class="total-price">Total Price: <?php echo $total_price; ?></div>
 

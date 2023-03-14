@@ -4,7 +4,6 @@ require_once "./module/database/database.php";
 
 function getProdDetails($product_id)
 {
-
     $sql = "SELECT * FROM products WHERE product_id = ?";
     $result = executeQuery($sql, "i", [$product_id]);
     $product = $result->fetch_assoc();
