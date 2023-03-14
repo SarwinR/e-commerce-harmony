@@ -37,7 +37,7 @@
 		<object
 			type="text/html"
 			width="100%"
-			height="310px"
+			height="280px"
 			data="./footer.html"
 		></object>
 	</footer>

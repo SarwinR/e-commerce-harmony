@@ -17,12 +17,12 @@
 	background-color: #fff;
 	border: 2px solid;
 	border-color: #f0f4f7;
-	height: 50px;
+	height: 38px;
 	box-shadow: none;
 	padding-left: 20px;
 	font-size: 16px;
 	color: #071c1f;
-	width: 42%;
+	width: 32%;
 	margin-bottom: 30px;
 	border-radius: 10px;
 	padding-right: 40px;
@@ -33,7 +33,7 @@ textarea{
 	background-color: #fff;
 	border: 2px solid;
 	border-color: #f0f4f7;
-	height: 50px;
+	height: 38px;
 	box-shadow: none;
 	padding-left: 20px;
 	font-size: 16px;
@@ -47,7 +47,7 @@ textarea{
 .contact-form textarea{
 	resize: vertical;
 	padding: 15px 20px;
-	min-height: 300px;
+	min-height: 150px;
 }
 
 .contact-form input[type="submit"] {
