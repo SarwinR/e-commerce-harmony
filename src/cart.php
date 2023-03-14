@@ -42,10 +42,19 @@ require_once './module/cart/items.php';
   <form action="checkout.html" method="post">
   <button type="checkout1" value="Checkout">Checkout</button>
 
-  <iframe src="footer.html" width="100%" height="100px" frameborder="0"></iframe>
+  
 
 </div>
 </form>
 
+<footer>
+		<object
+			type="text/html"
+			width="100%"
+			height="310px"
+			data="./footer.html"
+		></object>
+	</footer>
+  
 </body>
 </html>

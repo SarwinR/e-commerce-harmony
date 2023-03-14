@@ -73,3 +73,15 @@ function getCookie(name) {
 
 	return cookieDataString;
 }
+
+
+
+//codes for updating the cart
+
+function ready() {
+    var removeCartItemButtons = document.getElementsByClassName('btn-danger')
+    for (var i = 0; i < removeCartItemButtons.length; i++) {
+        var button = removeCartItemButtons[i]
+        button.addEventListener('click', removeCartItem)
+    }
+}
