@@ -60,6 +60,7 @@ $user= getUser();
             <h2><b>Welcome to Harmony</b></h2>
         </div>
         <div class="user-name">
+        
         <?php
          echo "<h2>".$user["firstName"]." ".$user["lastName"]."</h2>";
 

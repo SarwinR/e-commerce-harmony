@@ -1,7 +1,7 @@
-body{
+body {
 	align-items: center;
-	justify-content:center;
-	display:contents;
+	justify-content: center;
+	display: contents;
 }
 
 #cat_title {
@@ -12,16 +12,18 @@ body{
 	font-weight: bold;
 	text-align: center;
 }
-button{
-    background-color: #ffffff;
-    border: 2px solid #88bc52;
+
+button {
+	background-color: #ffffff;
+	border: 2px solid #88bc52;
 	border-radius: 20px;
-    text-align: center;
-    transition-duration: 0.4s;
+	text-align: center;
+	transition-duration: 0.4s;
 }
+
 button:hover {
-    background-color: #4CAF50;
-    color: white;
+	background-color: #4CAF50;
+	color: rgb(0, 0, 0);
 }
 
 .side-panel {
@@ -105,14 +107,11 @@ button:hover {
 	border-radius: 20px;
 }
 
-.product h3 {
-}
+.product h3 {}
 
-.product p {
-}
+.product p {}
 
-.product button {
-}
+.product button {}
 
 .product img {
 	width: 200px;

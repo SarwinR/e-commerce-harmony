@@ -11,11 +11,13 @@
 	justify-content: center;
 	height: auto;
 }
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
 }
+
 .col-left {
 	width: 50%;
 	text-align: left;
@@ -49,13 +51,16 @@ a:link {
 	color: white;
 	text-decoration: none;
 }
+
 a:visited {
 	color: white;
 	text-decoration: none;
 }
+
 a:hover {
 	text-decoration: none;
 }
+
 a:active {
 	text-decoration: none;
 }
@@ -128,22 +133,22 @@ a:active {
 	max-height: 400px;
 }
 
-.rating-container{
+.rating-container {
 	color: #80B500;
 	display: flex;
 	align-items: center;
 }
 
-.rating-text{
+.rating-text {
 	margin-right: 5px;
 	font-size: 15px;
 }
 
-.rating-value{
+.rating-value {
 	font-size: 15px;
 }
 
-.product-title{
+.product-title {
 	margin-top: 0px;
 }
 
@@ -193,7 +198,7 @@ a:active {
 	overflow: hidden;
 }
 
-.comment .rating-container i{
+.comment .rating-container i {
 	font-style: normal;
 	font-size: 15px;
 }
@@ -204,7 +209,7 @@ a:active {
 	font-size: 20px;
 }
 
-.comment-date{
+.comment-date {
 	position: absolute;
 	padding: 0 18px 0;
 	border: 2px solid #80B500;
@@ -214,43 +219,44 @@ a:active {
 	right: 0;
 }
 
-.review-form{
+.review-form {
 	background-color: #f0f4f7;
 	padding: 30px;
 	margin-top: 60px;
+	margin-bottom: 60px;
 	width: 100%;
 }
 
-.review-form h4{
+.review-form h4 {
 	margin-top: 0px;
 	margin-bottom: 30px;
 	font-size: 20px;
 }
 
-.review-form h6{
+.review-form h6 {
 	margin-top: 0;
 	margin-right: 15px;
 	margin-bottom: 0;
 	font-size: 16px;
 }
 
-.review-form .review-container{
+.review-form .review-container {
 	display: flex;
 	margin-bottom: 20px;
 }
 
-.review-form .review-container label{
+.review-form .review-container label {
 	margin-right: 8px;
 	font-size: 16px;
 	font-weight: bold;
 }
 
-.review-form .review-container input{
+.review-form .review-container input {
 	padding-left: 5px;
 	width: 45px;
 }
 
-textarea{
+textarea {
 	resize: vertical;
 	padding: 15px 20px;
 	min-height: 150px;
@@ -258,7 +264,7 @@ textarea{
 
 .review-form input[type="text"],
 .review-form input[type="email"],
-textarea{
+textarea {
 	background-color: #fff;
 	border: 2px solid;
 	border-color: #f0f4f7;
@@ -288,20 +294,21 @@ textarea{
 .review-form input[type="submit"]:hover {
 	background-color: wheat;
 }
+
 ::-webkit-scrollbar {
-    width: 10px;
+	width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #d1e5ff
+	background: #d1e5ff
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #7599ad;
-    border-radius: 10px;
+	background: #7599ad;
+	border-radius: 10px;
 }
 
-.contact-form{
+.contact-form {
 	background-color: #88bc52;
 	padding: 30px;
 	padding-top: 0px;
@@ -310,13 +317,13 @@ textarea{
 	border-radius: 20px;
 }
 
-.contact-form h4{
+.contact-form h4 {
 	margin-top: 0px;
 	margin-bottom: 30px;
 	font-size: 25px;
 }
 
-.contact-form input[type="text"]{
+.contact-form input[type="text"] {
 	background-color: #fff;
 	border: 2px solid;
 	border-color: #f0f4f7;
@@ -332,7 +339,7 @@ textarea{
 }
 
 .contact-form input[type="email"],
-textarea{
+textarea {
 	background-color: #fff;
 	border: 2px solid;
 	border-color: #f0f4f7;
@@ -347,7 +354,7 @@ textarea{
 	padding-right: 40px;
 }
 
-.contact-form textarea{
+.contact-form textarea {
 	resize: vertical;
 	padding: 15px 20px;
 	min-height: 300px;
