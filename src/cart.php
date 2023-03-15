@@ -10,7 +10,7 @@ require_once './module/cart/items.php';
   <meta charset="UTF-8">
   <title>Harmony Cart</title>
   <link rel="stylesheet" href="./css/cart.css">
-  <link rel="stylesheet" href="css/Button.css">
+  <!--<link rel="stylesheet" href="css/Button.css">-->
   <script src="./js/cart.js"></script>
 </head>
 <body>

@@ -78,10 +78,59 @@ function getCookie(name) {
 
 //codes for updating the cart
 
-function ready() {
-    var removeCartItemButtons = document.getElementsByClassName('btn-danger')
-    for (var i = 0; i < removeCartItemButtons.length; i++) {
-        var button = removeCartItemButtons[i]
-        button.addEventListener('click', removeCartItem)
-    }
-}
+// Remove product from cart
+function removeProduct(onclick="remove-btn") {
+
+	const target = event.target; // Get the clicked element
+	const row = target.closest('tr'); // Get the row that contains the clicked button
+	row.remove(); // Remove the row from the table
+	//updateCart(); // Update the cart total and item count
+  }
+  
+  // Increment product quantity
+  function incrementQuantity(button = "plus-btn") {
+
+	const quantityContainer = button.parentElement;
+	const quantitySpan = quantityContainer.querySelector('.quantity');
+	let quantity = parseInt(quantitySpan.innerText); // Parse the current quantity as an integer
+	quantity++;// Increment
+	quantitySpan.innerText = quantity; // Update the quantity span
+	//updateCart();// Update the cart total and item count
+
+  }
+  
+  // Decrement product quantity
+  function decrementQuantity(button = "minus-btn") {
+	const counter = button.parentElement;
+
+	var quantitySpan = counter.querySelector(".quantity");
+  var quantity = parseInt(quantitySpan.innerText);
+	//const quantityContainer = button.parentElement; // Get the quantity container
+	//const quantitySpan = quantityContainer.querySelector('.quantity'); // Get the quantity span
+
+	//let quantity = parseInt(quantitySpan.innerText); // Parse the current quantity as an integer
+	if (quantity > 1) { // Check if the quantity is greater than 1
+	  quantity--; // Decrement the quantity
+	  quantitySpan.innerText = quantity; // Update the quantity span
+	  //updateCart(); // Update the cart total and item count
+	}
+  }
+
+// Update the cart total and item count
+/*function updateCart() {
+	const cartItems = document.querySelectorAll('.cart-item'); // Get all cart items
+	let itemCount = 0; // Initialize the item count
+	let total = 0; // Initialize the total
+
+	// Loop through each cart item
+	cartItems.forEach((cartItem) => {
+	  const quantity = parseInt(cartItem.querySelector('.quantity').innerText); // Get the quantity
+	  const price = parseFloat(cartItem.querySelector('.price').innerText.replace('$', '')); // Get the price
+	  total += quantity * price; // Update the total
+	  itemCount += quantity; // Update the item count
+	});
+
+	// Update the cart total and item count
+	document.querySelector('.item-count').innerText = itemCount;
+	document.querySelector('.total').innerText = total.toFixed(2);
+  }*/

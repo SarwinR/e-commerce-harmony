@@ -30,14 +30,18 @@ function displayItems($product, $quantity){
   echo "<td>" . $product['product_title'] . "</td>";
   echo "<td><img src='../assets/product_img/" . $product['product_img'] . "' alt='" . $product['product_title'] . "' width='250' height='200'></td>";
   echo "<td>";
+
   echo "<div class='counter'>";
-  echo "<button class='minus-btn'>-</button>";
+  echo "<button class='minus-btn' onclick= 'decrementQuantity(this)'>-</button>";
   echo "<span class='quantity'>" . $quantity . "</span>";
-  echo "<button class='plus-btn'>+</button>";
+  echo "<button class='plus-btn' onclick='incrementQuantity(this)'>+</button>";
   echo "</div>";
   echo "</td>";
+
   echo "<td>Rs " . $product['product_price'] . "</td>";
+  //echo "<td><button class = " btn btn-danger" type = "button"> REMOVE </button> </td>";
   echo "<td><button onclick='removeProduct()'>Remove</button></td>";
+  
   echo "</tr>";
 }
 
