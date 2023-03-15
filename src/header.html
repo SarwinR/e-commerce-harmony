@@ -19,7 +19,9 @@
 			/></a>
 
 			<ul class="navbar">
-				<li><a href="home.html" target="_top" class="active">Home</a></li>
+				<li>
+					<a href="home.html" target="_top" class="active">Home</a>
+				</li>
 				<li><a href="shop.html" target="_top">Shop</a></li>
 				<li><a href="contactUs.php" target="_top">Contact</a></li>
 				<li><a href="about.html" target="_top">About</a></li>
@@ -28,21 +30,37 @@
 			<div class="main">
 				<div class="dropdown">
 					<button class="profile-button">
-						<img src="../assets/icons8-customer.png" alt="Logo" />
+						<a
+							id="login_txt"
+							href="./authPage.php"
+							target="_top"
+							style="padding: 10px"
+							>log in</a
+						>
+						<a
+							id="login_img"
+							href="./profilePage.php"
+							target="_top"
+						>
+							<img
+								src="../assets/icons8-customer.png"
+								alt="Logo"
+							/>
+						</a>
 					</button>
-					<!-- <div>
-						<a href="#"><b>Sign in | Register</b></a>
-						<a href="#"><b>My Account</b></a>
-						<a href="#"><b>WishList</b></a>
-					</div> -->
 				</div>
 
 				<button class="cart-button">
 					<a href="./cart.php">
-						<img src="../assets/icons8-shopping-cart.png" alt="Logo" />
-					  </a>
+						<img
+							src="../assets/icons8-shopping-cart.png"
+							alt="Logo"
+						/>
+					</a>
 				</button>
 			</div>
+
+			<script src="./js/header.js"></script>
 		</header>
 	</body>
 </html>

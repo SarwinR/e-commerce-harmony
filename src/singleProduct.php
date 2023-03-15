@@ -19,13 +19,8 @@ $product_id = $_GET['product_id'];
 
 <body>
 
-<object
-			type="text/html"
-			width="100%"
-			height="100px"
-			data="./header.html"
-		></object>
-        
+    <object type="text/html" width="100%" height="100px" data="./header.html"></object>
+
     <div class="container">
         <?php
         getProdDetails($product_id);
@@ -63,13 +58,8 @@ $product_id = $_GET['product_id'];
         </div>
     </div>
     <footer>
-				<object
-					type="text/html"
-					width="100%"
-					height="310px"
-					data="./footer.html"
-				></object>
-			</footer>
+        <object type="text/html" width="100%" height="310px" data="./footer.html"></object>
+    </footer>
 </body>
 
 </html>

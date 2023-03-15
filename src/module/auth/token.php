@@ -2,7 +2,6 @@
 session_start();
 require_once "./module/database/database.php";
 
-
 function generateToken($email)
 {
     $token = bin2hex(random_bytes(32));
@@ -11,11 +10,12 @@ function generateToken($email)
 
     $_SESSION['user']['email'] = $email;
     $_SESSION['user']['token'] = $token;
+
+    setcookie('loggedin', '1', time() + (86400 * 30), "/");
 }
 
 function checkForToken()
 {
-
     if (isset($_SESSION['user']['email']) && isset($_SESSION['user']['token'])) {
         $email = $_SESSION['user']['email'];
         $token = $_SESSION['user']['token'];
@@ -30,7 +30,7 @@ function checkForToken()
                 //header("Location: ./index.php");
                 return true;
             } else {
-                // the current session is expired (30 days has passed)
+                return false;
             }
         }
 

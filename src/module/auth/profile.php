@@ -14,20 +14,19 @@ function logout()
         alert('logged out!');
         window.location.href='./index.php';
         </script>";
+
+        // delete the cookie
+        setcookie('loggedin', '1', time() - 3600, "/");
     }
 }
-function getUser(){
-  
+function getUser()
+{
+
     if (isset($_SESSION['user']['email']) && isset($_SESSION['user']['token'])) {
         $email = $_SESSION['user']['email'];
         $sql = "SELECT firstName,lastName FROM users WHERE email = ?";
         $result = executeQuery($sql, "s", [$email]);
         $user = $result->fetch_assoc();
         return $user;
-    
     }
-
-
-
-
 }
