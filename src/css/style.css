@@ -187,15 +187,9 @@ a:active {
 	position: relative;
 }
 
-.commenter-image {
-	float: left;
-	margin-right: 30px;
-	max-width: 100px;
-	border-radius: 100%;
-}
-
 .comment {
 	overflow: hidden;
+	padding-left: 20px;
 }
 
 .comment .rating-container i {
