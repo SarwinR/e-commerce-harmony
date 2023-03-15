@@ -31,7 +31,6 @@ function getReviews($product_id){
         foreach ($reviews as $review) {
             echo "<li>";
             echo "<div class='review-container'>";
-            echo "<img src='../assets/img/user.jpg' alt='user' class='commenter-image' />"; //Make image increment with a number
             echo "<div class='comment'>";
             echo "<h6>" . $review['firstName'] . " " . $review['lastName'] . "</h6>";
             echo "<span class='rating-container'>";
