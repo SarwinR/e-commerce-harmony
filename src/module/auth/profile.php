@@ -16,3 +16,18 @@ function logout()
         </script>";
     }
 }
+function getUser(){
+  
+    if (isset($_SESSION['user']['email']) && isset($_SESSION['user']['token'])) {
+        $email = $_SESSION['user']['email'];
+        $sql = "SELECT firstName,lastName FROM users WHERE email = ?";
+        $result = executeQuery($sql, "s", [$email]);
+        $user = $result->fetch_assoc();
+        return $user;
+    
+    }
+
+
+
+
+}

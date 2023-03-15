@@ -55,10 +55,9 @@ body{
 	display: grid;
 	grid-template-columns: auto auto auto;
 	grid-gap: 20px;
-
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	align-items: center;
-
+    text-align: center;
 	padding: 20px 20px;
 }
 .product {
@@ -70,14 +69,11 @@ body{
 }
 
 
-
-
 .hyper-button{
-    margin: 0;
-    position: relative;
-    left: 170%;
-    padding-top: 5px;
+	text-align: center;
 }
+
+
 
 button{
     background-color: #ffffff;

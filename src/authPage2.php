@@ -4,11 +4,13 @@ require_once "./module/auth/authentication.php";
 ?>
 
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css\home2.css" />
+    <script src="./js/shop.js"></script>
+
+    <meta charset="utf-8" />
 	<title>Harmony - Login / Register</title>
 	<meta name="description" content="Harmony login page" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -16,11 +18,30 @@ require_once "./module/auth/authentication.php";
 	<link rel="shortcut icon" href="" type="image/x-icon" />
 	<link rel="stylesheet" href="./css/style.css" />
 </head>
-
 <body>
-	<object type="text/html" width="100%" height="100px" data="./header.html"></object>
+	<div class="sidebar">
+        <img src="../assets/Bannerreduced.png" alt="logo">
 
-	<div class="body-wrapper">
+        <div class="upper-border-sidebar"></div>
+		<a href="home2.html">Home</a>
+		<a href="shop2.html">Shop</a>
+		<a href="contactUs2.php">Contact</a>
+		<a href="#">About</a>
+        <div class="bottom-border-sidebar"></div>
+        
+    <div class="icons">
+        <button class="profile-button">
+            <img src="../assets/icons8-customer.png" alt="Logo" />
+        </button>
+        
+        <button class="cart-button">
+            <img src="../assets/icons8-shopping-cart.png" alt="Logo" />
+        </button>
+    </div>
+    
+	</div>
+	<div class="main">
+    <div class="body-wrapper">
 		<div class="login-area">
 			<div class="container">
 				<div class="col-center" name="Register">
@@ -62,15 +83,11 @@ require_once "./module/auth/authentication.php";
 			</div>
 		</div>
 	</div>
+    
+    </div>
+            
+    </div>
+
+
 </body>
-
-<footer>
-		<object
-		type="text/html"
-		width="100%"
-		height="310px"
-		data="./footer.html"
-		></object>
-	</footer>
-
 </html>

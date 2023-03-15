@@ -3,22 +3,35 @@
 ?>
 
 <!DOCTYPE html>
-
 <html>
 	<head>
-		<title>Contact Us</title>
-		<link rel="stylesheet" href="css/style.css" />
+		<meta charset="utf-8" />
+		<title>Shop</title>
+		<link rel="stylesheet" href="css\contactUs2.css" />
+		<script src="./js/shop.js"></script>
 	</head>
-    
 	<body>
+		<div class="sidebar">
+			<img src="../assets/Bannerreduced.png" alt="logo" />
 
-    <object
-			type="text/html"
-			width="100%"
-			height="100px"
-			data="./header.html"
-		></object>
+			<div class="upper-border-sidebar"></div>
+			<a href="home2.html">Home</a>
+			<a href="shop2.html">Shop</a>
+			<a href="contactUs2.php">Contact</a>
+			<a href="#">About</a>
+			<div class="bottom-border-sidebar"></div>
 
+			<div class="icons">
+				<button class="profile-button">
+					<img src="../assets/icons8-customer.png" alt="Logo" />
+				</button>
+
+				<button class="cart-button">
+					<img src="../assets/icons8-shopping-cart.png" alt="Logo" />
+				</button>
+			</div>
+		</div>
+		<div class="main">
 		<div class="container">
             <div class="col-center">
                 <form method="post" class="contact-form" action="./module/contact/contact.php">
@@ -33,15 +46,6 @@
             </div>
         </div>
 
-        <footer>
-		<object
-			type="text/html"
-			width="100%"
-			height="280px"
-			data="./footer.html"
-		></object>
-	</footer>
-    
+		</div>
 	</body>
-
 </html>
