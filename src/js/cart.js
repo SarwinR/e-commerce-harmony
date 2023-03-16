@@ -27,7 +27,9 @@ function add2Cart(productID, quantity = 1, msg="Item added to cart ") {
 	var cartString = "cart=" + dict2String(cart);
 
 	setCookie(cartString, 30);
-	alert(msg);
+
+	if (msg != "")
+		alert(msg);
 }
 
 function string2Dict(string) {
@@ -75,45 +77,49 @@ function getCookie(name) {
 }
 
 
-
-//codes for updating the cart
-
 // Remove product from cart
-function removeProduct(onclick="remove-btn") {
-
+function removeProduct(productID, quantity) {
 	const target = event.target; // Get the clicked element
 	const row = target.closest('tr'); // Get the row that contains the clicked button
 	row.remove(); // Remove the row from the table
-	//updateCart(); // Update the cart total and item count
+
+	add2Cart(productID, -quantity, "");
+
+	//updateCart(); // Update the cart total and per item price
   }
   
   // Increment product quantity
-  function incrementQuantity(button = "plus-btn") {
-
+  function incrementQuantity(button = "plus-btn", productID) {
 	const quantityContainer = button.parentElement;
 	const quantitySpan = quantityContainer.querySelector('.quantity');
 	let quantity = parseInt(quantitySpan.innerText); // Parse the current quantity as an integer
 	quantity++;// Increment
 	quantitySpan.innerText = quantity; // Update the quantity span
-	//updateCart();// Update the cart total and item count
+	
+	add2Cart(productID, 1, "");
 
-  }
-  
-  // Decrement product quantity
-  function decrementQuantity(button = "minus-btn") {
+	//updateCart(); // Update the cart total and per item price
+	
+}
+
+// Decrement product quantity
+function decrementQuantity(button = "minus-btn", productID) {
 	const counter = button.parentElement;
-
+	
 	var quantitySpan = counter.querySelector(".quantity");
-  var quantity = parseInt(quantitySpan.innerText);
-	//const quantityContainer = button.parentElement; // Get the quantity container
-	//const quantitySpan = quantityContainer.querySelector('.quantity'); // Get the quantity span
-
-	//let quantity = parseInt(quantitySpan.innerText); // Parse the current quantity as an integer
+	var quantity = parseInt(quantitySpan.innerText);
 	if (quantity > 1) { // Check if the quantity is greater than 1
-	  quantity--; // Decrement the quantity
-	  quantitySpan.innerText = quantity; // Update the quantity span
-	  //updateCart(); // Update the cart total and item count
+		quantity--; // Decrement the quantity
+		quantitySpan.innerText = quantity; // Update the quantity span
+
+		add2Cart(productID, -1, "");
+
+	//updateCart(); // Update the cart total and per item price
 	}
+  }
+
+  function updateCart(){
+	
   }
 
 // Update the cart total and item count

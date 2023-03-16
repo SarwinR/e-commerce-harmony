@@ -10,7 +10,6 @@ require_once './module/cart/items.php';
   <meta charset="UTF-8">
   <title>Harmony Cart</title>
   <link rel="stylesheet" href="./css/cart.css">
-  <!--<link rel="stylesheet" href="css/Button.css">-->
   <script src="./js/cart.js"></script>
 </head>
 <body>
@@ -28,16 +27,14 @@ require_once './module/cart/items.php';
     </tr>
 
     <?php 
-    $total_price = 0;
 
     getCartItems();
 
-    // $products = _test_getCartItems();
-    // $products = getCartItems();
     ?>
 
   </table>
-  <div class="total-price">Total Price: <?php echo $total_price; ?></div>
+  <div class="total-price">Total Price: Rs 0</div>
+  <br>
 
   <form action="checkout.html" method="post">
   <button type="checkout1" value="Checkout">Checkout</button>
