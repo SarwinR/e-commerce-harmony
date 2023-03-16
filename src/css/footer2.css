@@ -1,12 +1,12 @@
 body {
 	overflow: hidden;
 	width: 100%;
-	margin:0px;
-	
+	margin: 0px;
+
 }
 
-.footer-top{
-    background-color: #BA926E;
+.footer-top {
+	background-color: #BA926E;
 }
 
 .social {
@@ -17,6 +17,10 @@ body {
 
 .social li {
 	margin: 10px 0;
+}
+
+.a4-studio h3 {
+	color: #000000;
 }
 
 .logo {
@@ -56,6 +60,11 @@ body {
 	color: white;
 }
 
+.section p {
+	font-size: 15px;
+	color: white;
+}
+
 .icon-facebook,
 .icon-twitter,
 .icon-instagram,
@@ -74,37 +83,17 @@ body {
 
 .fa {
 	font-size: 30px;
-	padding:0px;
+	padding: 0px;
 	width: 20px;
 	text-align: center;
 	text-decoration: none;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
 	opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-	background: #3B5998;
-	color: white;
-  }
-  
-  /* Twitter */
-  .fa-twitter {
-	background: #55ACEE;
-	color: white;
-  }
+}
 
-  .fa-instagram {
-	background: #125688;
-	color: white;
-  }
+/* Set a specific color for each brand */
 
-  .fa-youtube {
-	background: #bb0000;
-	color: white;
-  }
+/* Facebook */
