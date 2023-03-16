@@ -6,6 +6,7 @@ if (session_status() !== PHP_SESSION_ACTIVE) session_start();
 
 $user = getUser();
 
+$err = null;
 if (isset($_SESSION['profile_update_error'])) {
     $err = $_SESSION['profile_update_error'];
     $_SESSION['profile_update_error'] = null;
