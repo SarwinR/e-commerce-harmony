@@ -13,6 +13,10 @@ body {
 	text-align: center;
 }
 
+.contents{
+	padding: 5px;
+}
+
 button {
 	background-color: #ffffff;
 	border: 2px solid #88bc52;

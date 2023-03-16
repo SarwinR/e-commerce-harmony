@@ -15,7 +15,7 @@ require_once './module/cart/items.php';
 <body>
   
   <iframe src="header.html" width="100%" height="100px" frameborder="0"></iframe>
-
+<div class="contents">
   <h1>Harmony Cart</h1>
   <table>
     <tr>
@@ -37,12 +37,12 @@ require_once './module/cart/items.php';
   <button type="checkout1" value="Checkout">Checkout</button>
   </form>
   <br>
-
+</div>
 <footer>
-		<object
+<object
 			type="text/html"
 			width="100%"
-			height="310px"
+			height="280px"
 			data="./footer.html"
 		></object>
 	</footer>

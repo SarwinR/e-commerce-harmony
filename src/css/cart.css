@@ -2,13 +2,20 @@
     width: 100%;
     border-collapse: collapse;
   }
- 
+  body {
+    align-items: center;
+    justify-content: center;
+    display: contents;
+    margin:0px;
+  }
   th, td {
     border-bottom: 1px solid #ddd;
     padding: 8px;
     text-align: left;
   } 
-
+.contents{
+  padding: 5px;
+}
 
   .total-price {
     font-size: 18px;
