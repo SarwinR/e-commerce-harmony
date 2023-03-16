@@ -1,10 +1,16 @@
+<?php
+require_once "./module/auth/profile.php";
+session_start();
+$user= getUser();
+?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8" />
     <title>Shop</title>
-    <link rel="stylesheet" href="css\home2.css" />
+    <link rel="stylesheet" href="css\index2.css" />
     <script src="./js/shop.js"></script>
 </head>
 
@@ -34,9 +40,14 @@
         <div class="background-container">
             <img src="../assets/home/background2.jpg" alt="food">
             <div class="center-text">
-                <h1 id="background-text"></h1>
+                <h1 id="background-text">Welcome to Harmony</h1>
             </div>
-        </div>
+            <div class="user-name">
+            <?php
+				 echo "<h2>".$user["firstName"]." ".$user["lastName"]."</h2>";
+	
+				?> 
+            </div>
 
 
 
