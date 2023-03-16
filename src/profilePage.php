@@ -46,20 +46,20 @@ if (isset($_SESSION['profile_update_error'])) {
                         <label>
                             First Name:
                         </label>
-                        <input value="<?php echo $user["firstName"] ?>" type="text" name="firstName">
+                        <input required="required" minlength="3" maxlength="64" value="<?php echo $user["firstName"] ?>" type="text" name="firstName">
                     </div>
                     <div class="last-name">
                         <label>
                             Last Name:
                         </label>
-                        <input value="<?php echo $user["lastName"] ?>" type="text" name="lastName">
+                        <input required="required" minlength="3" maxlength="64" value="<?php echo $user["lastName"] ?>" type="text" name="lastName">
                     </div>
 
                     <div class="display-email">
                         <label>
                             Display Email:
                         </label>
-                        <input value="<?php echo $_SESSION['user']['email'] ?>" type="email" name="email" placeholder="example@example.com" class="input-email">
+                        <input readonly value="<?php echo $_SESSION['user']['email'] ?>" type="email" name="email" placeholder="example@example.com" class="input-email">
                     </div>
                 </fieldset>
 
@@ -68,13 +68,13 @@ if (isset($_SESSION['profile_update_error'])) {
                     <div class="row">
                         <div class="col-md-12">
                             <label>Current password (leave blank to leave unchanged):</label>
-                            <input type="password" name="currentPassword">
+                            <input required="required" type="password" name="currentPassword">
                             <br>
                             <label>New password (leave blank to leave unchanged):</label>
-                            <input type="password" name="newPassword">
+                            <input minlength="8" maxlength="64" type="password" name="newPassword">
                             <br>
                             <label>Confirm new password:</label>
-                            <input type="password" name="confirmNewPassword">
+                            <input minlength="8" maxlength="64" type="password" name="confirmNewPassword">
                         </div>
                     </div>
                 </fieldset>
