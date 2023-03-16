@@ -8,15 +8,6 @@ function getCartItems(){
 
   $items = explode(",", $cartString);
   array_pop($items);
-
-  // $details = array();
-  // foreach ($items as $item) {
-  //   list($id, $quantity) = explode(".", $item);
-    // $details[] = [
-    //   'id' => $id,
-    //   'quantity' => $quantity
-    // ];
-  // }
   
   foreach ($items as $item) {
     list($id, $quantity) = explode(".", $item);
@@ -32,15 +23,14 @@ function displayItems($product, $quantity){
   echo "<td>";
 
   echo "<div class='counter'>";
-  echo "<button class='minus-btn' onclick= 'decrementQuantity(this)'>-</button>";
+  echo "<button class='minus-btn' onclick= 'decrementQuantity(this, " . $product['product_id'] . ")'>-</button>";
   echo "<span class='quantity'>" . $quantity . "</span>";
-  echo "<button class='plus-btn' onclick='incrementQuantity(this)'>+</button>";
+  echo "<button class='plus-btn' onclick='incrementQuantity(this, " . $product['product_id'] . ")'>+</button>";
   echo "</div>";
   echo "</td>";
 
-  echo "<td>Rs " . $product['product_price'] . "</td>";
-  //echo "<td><button class = " btn btn-danger" type = "button"> REMOVE </button> </td>";
-  echo "<td><button onclick='removeProduct()'>Remove</button></td>";
+  echo "<td class='price'>Rs " . ($product['product_price'] * $quantity) . "</td>";
+  echo "<td><button onclick='removeProduct(" . $product['product_id'] . ", " . $quantity . ")'>Remove</button></td>";
   
   echo "</tr>";
 }
@@ -51,28 +41,4 @@ function fetchFromDB($product_id){
   $product = $result->fetch_assoc();
   return $product;
 }
-
-function _test_getCartItems(){
-  $products = [
-    [
-      'name' => 'Wooden Spoon',
-      'image' => 'pictures/spoon.jpg',
-      'quantity' => '1',
-      'price' => 50
-    ],
-    [
-      'name' => 'Pasta Straw',
-      'image' => 'pictures/pastastraw.jpg',
-      'quantity' => '1',
-      'price' => 30
-    ]
-  ];
-  return $products;
-}
-
-  // $total_price = 0;
-  // foreach ($products as $product) {
-  //   $total_price += $product['quantity'] * $product['price'];
-  // }
-
 ?>
