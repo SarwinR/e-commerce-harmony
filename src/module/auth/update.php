@@ -15,13 +15,7 @@ if (isset($_POST['submit'])) {
 
     $error_u = update($firstName, $lastName, $email, $currentPassword, $newPassword, $confirmNewPassword);
 
-    if ($error_u === true) {
-        $_SESSION['profile_update_error'] = "Update successful";
-        //echo "Update successful";
-    } else {
-        $_SESSION['profile_update_error'] = $error_u;
-        //echo $error_u;
-    }
+    $_SESSION['profile_update_error'] = "Update successful";
 }
 
 function update($firstName, $lastName, $email, $currentPassword, $newPassword, $confirmNewPassword)
