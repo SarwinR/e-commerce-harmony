@@ -21,5 +21,5 @@ function loadProduct(category) {
 
 function loadIndividualProduct(productID) {
 	// window.location.href = "http://localhost/e-commerce-harmony/src/singleProduct.php?product_id=" + productID;
-	window.location.href = "./singleProduct.php?product_id=" + productID;
+	window.location.href = "./singleProduct2.php?product_id=" + productID;
 }
