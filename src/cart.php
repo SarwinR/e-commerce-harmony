@@ -26,23 +26,17 @@ require_once './module/cart/items.php';
       <th>Action</th>
     </tr>
 
-    <?php 
-
-    getCartItems();
-
-    ?>
+    <?php getCartItems(); ?>
 
   </table>
-  <div class="total-price">Total Price: Rs 0</div>
+
+  <div class="total-price">Rs</div>
   <br>
 
   <form action="checkout.html" method="post">
   <button type="checkout1" value="Checkout">Checkout</button>
-
-  
-
-</div>
-</form>
+  </form>
+  <br>
 
 <footer>
 		<object
@@ -52,6 +46,6 @@ require_once './module/cart/items.php';
 			data="./footer.html"
 		></object>
 	</footer>
-  
+  <script>updateTotal();</script>
 </body>
 </html>

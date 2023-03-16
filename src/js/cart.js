@@ -79,64 +79,64 @@ function getCookie(name) {
 
 // Remove product from cart
 function removeProduct(productID, quantity) {
-	const target = event.target; // Get the clicked element
-	const row = target.closest('tr'); // Get the row that contains the clicked button
-	row.remove(); // Remove the row from the table
+	const target = event.target;
+	const row = target.closest('tr');
+	row.remove();
 
 	add2Cart(productID, -quantity, "");
-
-	//updateCart(); // Update the cart total and per item price
+	updateTotal(); // Update the cart total
   }
   
   // Increment product quantity
   function incrementQuantity(button = "plus-btn", productID) {
-	const quantityContainer = button.parentElement;
-	const quantitySpan = quantityContainer.querySelector('.quantity');
-	let quantity = parseInt(quantitySpan.innerText); // Parse the current quantity as an integer
-	quantity++;// Increment
-	quantitySpan.innerText = quantity; // Update the quantity span
+	const counter = button.parentElement;
+	var quantitySpan = counter.querySelector('.quantity');
+	var quantity = parseInt(quantitySpan.innerText);
+	var oldQty = quantity;
+	quantity++;
+	quantitySpan.innerText = quantity;
 	
 	add2Cart(productID, 1, "");
-
-	//updateCart(); // Update the cart total and per item price
-	
+	updatePrice(counter, oldQty, quantity); // Update the cart total and per item price
 }
 
 // Decrement product quantity
 function decrementQuantity(button = "minus-btn", productID) {
 	const counter = button.parentElement;
-	
 	var quantitySpan = counter.querySelector(".quantity");
 	var quantity = parseInt(quantitySpan.innerText);
-	if (quantity > 1) { // Check if the quantity is greater than 1
-		quantity--; // Decrement the quantity
-		quantitySpan.innerText = quantity; // Update the quantity span
+	var oldQty = quantity;
+	if (quantity > 1) {
+		quantity--;
+		quantitySpan.innerText = quantity;
 
 		add2Cart(productID, -1, "");
-
-	//updateCart(); // Update the cart total and per item price
+		updatePrice(counter, oldQty, quantity); // Update the cart total and per item price
 	}
   }
 
-  function updateCart(){
-	
+  function updatePrice(counter, oldQty, newQty){
+	var row = counter.closest("tr");
+	var priceTD = row.querySelector(".price");
+	var price = parseFloat(priceTD.innerText);
+	var indvPrice = price / oldQty;
+	priceTD.innerText = (indvPrice * newQty);
+
+	updateTotal();
   }
 
-// Update the cart total and item count
-/*function updateCart() {
-	const cartItems = document.querySelectorAll('.cart-item'); // Get all cart items
-	let itemCount = 0; // Initialize the item count
-	let total = 0; // Initialize the total
+  function updateTotal(){
+	var total = 0;
+	var rows = document.querySelectorAll("tr");
+	rows.forEach(function(row, index) {
+		// Skip the first row (index 0)
+		if (index === 0) {
+			return;
+		}
 
-	// Loop through each cart item
-	cartItems.forEach((cartItem) => {
-	  const quantity = parseInt(cartItem.querySelector('.quantity').innerText); // Get the quantity
-	  const price = parseFloat(cartItem.querySelector('.price').innerText.replace('$', '')); // Get the price
-	  total += quantity * price; // Update the total
-	  itemCount += quantity; // Update the item count
-	});
-
-	// Update the cart total and item count
-	document.querySelector('.item-count').innerText = itemCount;
-	document.querySelector('.total').innerText = total.toFixed(2);
-  }*/
+		var priceTD = row.querySelector('.price');
+		var price = parseFloat(priceTD.innerText);
+		total += price;
+	  });
+	document.querySelector(".total-price").innerText = "Total Price: Rs " + total;
+  }

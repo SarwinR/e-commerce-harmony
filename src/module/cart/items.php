@@ -29,7 +29,7 @@ function displayItems($product, $quantity){
   echo "</div>";
   echo "</td>";
 
-  echo "<td class='price'>Rs " . ($product['product_price'] * $quantity) . "</td>";
+  echo "<td class='price'>" . ($product['product_price'] * $quantity) . "</td>";
   echo "<td><button onclick='removeProduct(" . $product['product_id'] . ", " . $quantity . ")'>Remove</button></td>";
   
   echo "</tr>";
