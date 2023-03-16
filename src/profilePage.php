@@ -15,85 +15,40 @@ $user= getUser();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/profilePage.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rowdies&display=swap" rel="stylesheet">
     <!--js link-->
     <script src="./js/shop.js"></script>
 </head>
 
 <body>
+    <object
+			type="text/html"
+			width="100%"
+			height="100px"
+			data="./header.html"
+		></object>
     <!-- header starts here -->
-    <header>
-       
-        <a href="#" class="logo" href="index.html"><img src="../assets/Bannerreduced.png" alt="Logo"></a>
-        <ul class="navbar">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-
-        <div class="main">
-            <div class="dropdown">
-                <button class="profile-button">
-                    <img src="../assets/icons8-customer.png" alt="profile-Logo">
-                </button>
-                <div>
-                    <a href="#"><b>Sign in | Register</b></a>
-                    <a href="#"><b>My Account</b></a>
-                    <a href="#"><b>WishList</b></a>
-                </div>
-            </div>
-
-            <button class="cart-button">
-                <img src="../assets/icons8-shopping-cart.png" alt="cart-Logo">
-
-            </button>
-        </div>
-    </header>
+   
     <!-- End of header -->
     <!-- start of breadcrum area -->
-    <div class="breadcrumb">
+    <div class="background-container">
         <img src="../assets/banner-logopattern.jpg">
-        <div class="banner"></div>
-        <div class="banner-message">
-            <h2><b>Welcome to Harmony</b></h2>
-        </div>
-        <div class="user-name">
-        
-        <?php
-         echo "<h2>".$user["firstName"]." ".$user["lastName"]."</h2>";
-
-        ?> 
-        </div>
+        <div class="center-text">
+				<h1 id="background-text">Welcome to Harmony</h1>
+				<div class="user-name">
+			
+				<?php
+				 echo "<h2>".$user["firstName"]." ".$user["lastName"]."</h2>";
+	
+				?> 
+			</div>
+			</div>
     </div>
     <!-- End of breadcumb area -->
-    <div class="menu-list">
-        <div class="nav">
-            <a class="active-show" data-toggle="tab">
-                Dashboard
-            </a>
-            <a onclick="toggleOrder()" id="order-toggle" data-toogle="tab">
-                Orders
-            </a>
-            <a onclick="toggleAddress()" data-toogle="tab">
-                Address
-            </a>
-            <a onclick="toggleAccount()" data-toogle="tab">
-                Account Details
-            </a>
-            
-            <a>
-            <?php
-            
-                echo "<form method='post' action='./index.php'>
-                <input type='submit' name='logout' value='Logout' />
-                </form>";
-                
-            ?>
-            </a>
-
-        </div>
+    
+           
+      
 <div class="tab">
             <div class="tab-dashboard" id="tab-dashboard">
                 <p>From your account dashboard you can review your recent orders, manage your shipping and billing
@@ -157,6 +112,15 @@ $user= getUser();
         </div>
 
     </div>
+    <?php
+            
+            echo "<form method='post' action='./index.php'>
+            <input type='submit' name='logout' value='Logout' />
+            </form>";
+            
+        ?>
+        </a>
+
     
 </body>
 
