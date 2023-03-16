@@ -26,7 +26,7 @@ body {
 .bottom-border-sidebar {
     border-top: 3px solid #ffffff;
     width: 100%;
-    margin-top: 120%;
+    margin-top: 80%;
 }
 
 
@@ -52,12 +52,52 @@ body {
     color: rgb(255, 255, 255);
     padding: 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
+    margin: 0px;
 
 }
 
 .sidebar a:hover {
     background-color: #ddd;
+}
+
+.icons {
+    display: flex;
+    padding: 15px;
+}
+
+.icons .profile {
+    position: absolute;
+    left: 90px;
+    color: #ddd;
+    margin: 0px;
+}
+
+.icons .cart {
+    margin-top: 55px;
+    position: absolute;
+    left: 90px;
+    color: #ddd;
+}
+
+.profile:hover,
+.cart:hover {
+    background-color: #ba926e !important;
+}
+
+
+.icons .profile-button {
+    position: absolute;
+    left: 40px;
+    margin-top: 5px;
+    margin-left: -8px;
+
+
+}
+
+.icons .cart-button {
+    margin-top: 60px;
+    margin-right: 100px;
 }
 
 .main {
@@ -127,11 +167,13 @@ body {
 }
 
 .product {
-    background-color: #ffffff;
+    background-color: #b4afab91;
     text-align: left;
     padding: 20px;
     display: flex;
     margin-bottom: 5px;
+    border-radius: 5px;
+
 
 }
 
@@ -143,10 +185,11 @@ body {
 }
 
 .border {
-    border: 1px solid #b88d5b91;
+    border: 1px solid #ffffff91;
     margin-left: 40px;
     margin-right: 40px;
 }
+
 
 .testimonial {
     background-color: #ffffff;
@@ -183,7 +226,7 @@ button {
 
 button:hover {
     background-color: #b88d5b91;
-    color: white;
+
 }
 
 #shop-more-button {
@@ -202,6 +245,7 @@ button:hover {
 
 .profile-button img {
     width: 35px;
+
 }
 
 .cart-button img {
@@ -213,10 +257,6 @@ button:hover {
 }
 
 
-.icons {
-    display: flex;
-    padding: 15px;
-}
 
 
 

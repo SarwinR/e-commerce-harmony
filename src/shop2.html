@@ -1,130 +1,134 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Shop</title>
-		<link rel="stylesheet" href="css\shop2.css" />
-		<script src="./js/shop.js"></script>
-	</head>
-	<body>
-		<div class="sidebar">
-			<img src="../assets/Bannerreduced.png" alt="logo" />
 
-			<div class="upper-border-sidebar"></div>
-			<a href="home2.html">Home</a>
-			<a href="shop.html">Shop</a>
-			<a href="contactUs2.php">Contact</a>
-			<a href="#">About</a>
-			<div class="bottom-border-sidebar"></div>
+<head>
+	<meta charset="utf-8" />
+	<title>Shop</title>
+	<link rel="stylesheet" href="css\shop2.css" />
+	<script src="./js/shop.js"></script>
+</head>
 
-			<div class="icons">
-				<button class="profile-button">
-					<img src="../assets/icons8-customer.png" alt="Logo" />
-				</button>
+<body>
+	<div class="sidebar">
+		<img src="../assets/Bannerreduced.png" alt="logo" />
 
-				<button class="cart-button">
-					<img src="../assets/icons8-shopping-cart.png" alt="Logo" />
-				</button>
-			</div>
+		<div class="upper-border-sidebar"></div>
+		<a href="home2.html">Home</a>
+		<a href="shop.html">Shop</a>
+		<a href="contactUs2.php">Contact</a>
+		<a href="#">About</a>
+		<div class="bottom-border-sidebar"></div>
+
+		<div class="icons">
+			<button class="profile-button">
+				<img src="../assets/icons8-customer.png" alt="Logo" />
+			</button>
+			<a class="profile"> Profile</a>
+
+			<button class="cart-button">
+				<img src="../assets/icons8-shopping-cart.png" alt="Logo" />
+			</button>
+			<a class="cart"> Cart</a>
 		</div>
-		<div class="main">
-			<ul class="navbar">
-				Categories:
-				<li>
-					<button
-						id="Utility"
-						class="category-button"
-						onclick="loadProduct('Utility'); "
-					>
-						Utility
-					</button>
-				</li>
-				<li>
-					<button
-						id="Aviation"
-						class="category-button"
-						onclick="loadProduct('Aviation');"
-					>
-						Aviation
-					</button>
-				</li>
-				<li>
-					<button
-						id="Food"
-						class="category-button"
-						onclick="loadProduct('Food');"
-					>
-						Food
-					</button>
-				</li>
-				<li>
-					<button
-						id="Furniture"
-						class="category-button"
-						onclick="loadProduct('Furniture');"
-					>
-						Furniture
-					</button>
-				</li>
-			</ul>
+	</div>
+	<div class="main">
+		<ul class="navbar">
+			Categories:
+			<li>
+				<button id="Utility" class="category-button" onclick="loadProduct('Utility'); ">
+					Utility
+				</button>
+			</li>
+			<li>
+				<button id="Aviation" class="category-button" onclick="loadProduct('Aviation');">
+					Aviation
+				</button>
+			</li>
+			<li>
+				<button id="Food" class="category-button" onclick="loadProduct('Food');">
+					Food
+				</button>
+			</li>
+			<li>
+				<button id="Furniture" class="category-button" onclick="loadProduct('Furniture');">
+					Furniture
+				</button>
+			</li>
+		</ul>
 
-			<h1 id="titles">Default Category</h1>
+		<h1 id="titles">Default Category</h1>
 
-			<div class="products-container">
-				<div class="product">
-					<img src="../assets/product_img/Straw.jpg" alt="1" />
-					<div class="text">
-						<h3>Edible Rice Straw</h3>
-						<p>Price: Rs 25</p>
-						<button>Add to cart</button>
-					</div>
-				</div>
-
-				<div class="border"></div>
-
-				<div class="product">
-					<img src="../assets/product_img/Spoon.jpg" alt="2" />
-					<div class="text">
-						<h3>Wooden Spoon</h3>
-						<p>Price: Rs 25</p>
-						<button>Add to cart</button>
-					</div>
-				</div>
-
-				<div class="border"></div>
-
-				<div class="product">
-					<img
-						src="../assets/product_img/Fork.jpg.crdownload"
-						alt="3"
-					/>
-					<div class="text">
-						<h3>Wooden Fork</h3>
-						<p>Price: Rs 25</p>
-						<button>Add to cart</button>
-					</div>
-				</div>
-
-				<div class="border"></div>
-
-				<div class="product">
-					<img src="../assets/product_img/Takeaway Box.jpg" alt="4" />
-					<div class="text">
-						<h3>Bamboo Takeaway Box</h3>
-						<p>Price: Rs 25</p>
-						<button>Add to cart</button>
-					</div>
+		<div class="products-container">
+			<div class="product">
+				<img src="../assets/product_img/Straw.jpg" alt="1" />
+				<div class="text">
+					<h3>Edible Rice Straw</h3>
+					<p>Price: Rs 25</p>
+					<button>Add to cart</button>
+					<p class="description">Our Edible Rice Straw is an eco-friendly
+						and delicious alternative to plastic straws.
+						Made from rice flour, it's biodegradable,
+						gluten-free, vegan, and has a sweet, nutty
+						flavor. It comes in different sizes, is easy
+						to store, and has a long shelf life</p>
 				</div>
 			</div>
 
-			<footer>
-				<object
-					type="text/html"
-					width="100%"
-					height="310px"
-					data="./footer2.html"
-				></object>
-			</footer>
+			<div class="border"></div>
+
+			<div class="product">
+				<img src="../assets/product_img/Spoon.jpg" alt="2" />
+				<div class="text">
+					<h3>Wooden Spoon</h3>
+					<p>Price: Rs 25</p>
+					<button>Add to cart</button>
+					<p class="description">Crafted from high-quality
+						and eco-friendly wood, our Wooden Spoon is a
+						perfect substitute for plastic utensils. It is
+						sturdy, durable, and will not melt or leach
+						harmful chemicals into your food. </p>
+				</div>
+			</div>
+
+			<div class="border"></div>
+
+			<div class="product">
+				<img src="../assets/product_img/Fork.jpg.crdownload" alt="3" />
+				<div class="text">
+					<h3>Wooden Fork</h3>
+					<p>Price: Rs 25</p>
+					<button>Add to cart</button>
+					<p class="description">Crafted from high-quality
+						and eco-friendly wood, our Wooden Fork is a
+						perfect substitute for plastic utensils. It is
+						sturdy, durable, and will not melt or leach
+						harmful chemicals into your food. </p>
+				</div>
+			</div>
+
+			<div class="border"></div>
+
+			<div class="product">
+				<img src="../assets/product_img/Takeaway Box.jpg" alt="4" />
+				<div class="text">
+					<h3>Bamboo Takeaway Box</h3>
+					<p>Price: Rs 25</p>
+					<button>Add to cart</button>
+					<p class="description"> Made from sustainable bamboo,
+						our Takeaway Box is a durable and practical
+						alternative to single-use plastic containers.
+						It is lightweight, leak-proof, and comes with a
+						secure lid, ensuring your food stays fresh and safe.
+
+					</p>
+				</div>
+			</div>
 		</div>
-	</body>
+
+		<footer>
+			<object type="text/html" width="100%" height="310px" data="./footer2.html"></object>
+		</footer>
+	</div>
+</body>
+
 </html>
