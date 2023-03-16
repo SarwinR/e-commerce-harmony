@@ -58,3 +58,103 @@ img {
     text-align: left;
 
 }
+
+.tab-dashboard {
+    position: absolute;
+    width: 50%;
+    align-items: center;
+    background-color: #afacac;
+    margin-left: 25%;
+    border-radius: 10px;
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 3px;
+
+
+}
+
+.tab {
+    text-align: center;
+    align-items: center;
+}
+
+.accountChange {
+
+    position: absolute;
+    margin-top: 100px;
+    padding-left: 20px;
+    margin-left: 25%;
+    border-radius: 10px;
+    background-color: #88bc52;
+}
+
+.accountChange legend {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.accountChange label input {
+    padding-top: 100px;
+}
+
+.first-name input,
+.last-name input,
+.display-email input,
+.col-md-12 input {
+    border-radius: 5px;
+
+}
+
+.first-name label,
+.last-name label,
+.display-email label,
+.col-md-12 label {
+    font-size: 20px;
+
+
+}
+
+.passwordChange {
+    position: absolute;
+
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-top: 250px;
+    margin-left: 25%;
+    background-color: #88bc52;
+}
+
+.passwordChange legend {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.button-save {
+
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 45%;
+}
+
+
+.button-save button {
+    font-size: 15px;
+}
+
+.message {
+    padding-top: 420px;
+    font-size: 20px;
+    color: red;
+}
+
+.logout {
+    position: absolute;
+    margin-left: 90%;
+    border-radius: 10px;
+    margin-top: 7px;
+
+}

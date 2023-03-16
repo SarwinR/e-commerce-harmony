@@ -28,41 +28,15 @@ $user= getUser();
 			height="100px"
 			data="./header.html"
 		></object>
-    <!-- header starts here -->
-   
-    <!-- End of header -->
-    <!-- start of breadcrum area -->
-    <div class="background-container">
-        <img src="../assets/banner-logopattern.jpg">
-        <div class="center-text">
-				<h1 id="background-text">Welcome to Harmony</h1>
-				<div class="user-name">
-			
-				<?php
-				 echo "<h2>".$user["firstName"]." ".$user["lastName"]."</h2>";
-	
-				?> 
-			</div>
-			</div>
-    </div>
-    <!-- End of breadcumb area -->
     
-           
       
 <div class="tab">
             <div class="tab-dashboard" id="tab-dashboard">
-                <p>From your account dashboard you can review your recent orders, manage your shipping and billing
-                    addresses, and edit your password and account details </p>
+                <p>From your account dashboard you can edit your password and account details </p>
             </div>
             
             <div class="tab-account-detail" id="tab-account-detail">
-                <div class="account-top">
-                    <p>
-                    <h3>Manage account</h3>
-                    <br>
-                    Add or update your personal data
-                    </p>
-                </div>
+                
 
                 <form method="post" action="">
                     <fieldset class="accountChange">
@@ -103,6 +77,7 @@ $user= getUser();
                             </div>
                         </div>
                     </fieldset>
+                    <p class="message">Before pressing Save changes, your current password should be input</p>
                     <div class="button-save">
                         <button id="myForm" type="submit" name="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">Save Changes</button>
                     </div>
@@ -112,16 +87,17 @@ $user= getUser();
         </div>
 
     </div>
+    <div class="logout">
     <?php
             
-            echo "<form method='post' action='./index.php'>
+            echo "<form method='post'  action='./index.php'>
             <input type='submit' name='logout' value='Logout' />
             </form>";
             
         ?>
         </a>
+    </div>
 
-    
 </body>
 
 </html>
