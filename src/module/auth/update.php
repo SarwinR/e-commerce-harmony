@@ -1,7 +1,9 @@
 <?php
+
+if (session_status() !== PHP_SESSION_ACTIVE) session_start();
+
 require_once "./module/database/database.php";
 require_once "./module/auth/token.php";
-
 
 if (isset($_POST['submit'])) {
     $firstName = $_POST['firstName'];
@@ -14,13 +16,16 @@ if (isset($_POST['submit'])) {
     $error_u = update($firstName, $lastName, $email, $currentPassword, $newPassword, $confirmNewPassword);
 
     if ($error_u === true) {
-        echo "Update successful";
+        $_SESSION['profile_update_error'] = "Update successful";
+        //echo "Update successful";
     } else {
-        echo $error_u;
+        $_SESSION['profile_update_error'] = $error_u;
+        //echo $error_u;
     }
 }
 
-function update($firstName, $lastName, $email, $currentPassword, $newPassword, $confirmNewPassword) {
+function update($firstName, $lastName, $email, $currentPassword, $newPassword, $confirmNewPassword)
+{
     // Check if the new password and confirmation match
     if ($newPassword !== $confirmNewPassword) {
         return "New password and confirmation do not match";
@@ -39,10 +44,11 @@ function update($firstName, $lastName, $email, $currentPassword, $newPassword, $
 
     // Verify the current password
     if (!password_verify($currentPassword, $user['password'])) {
+
         return "Current password is incorrect";
     }
 
-    
+
     if (empty($newPassword)) {
         // New password is empty, do not update the password in the database
         $sql = "UPDATE users SET firstName=?, lastName=?, email=? WHERE email=?";

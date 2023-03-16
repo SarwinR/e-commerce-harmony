@@ -1,88 +1,116 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Shop</title>
+		<link rel="stylesheet" href="css\shop.css" />
+		<script src="./js/shop.js"></script>
+	</head>
 
-<head>
-	<meta charset="utf-8" />
-	<title>Shop</title>
-	<link rel="stylesheet" href="css\shop.css" />
-	<script src="./js/shop.js"></script>
-</head>
+	<body>
+		<object
+			type="text/html"
+			width="100%"
+			height="100px"
+			data="./header.html"
+		></object>
 
-<body>
-	<object type="text/html" width="100%" height="100px" data="./header.html"></object>
+		<h1 id="cat_title">DEFAULT CATEGORY</h1>
 
-	<h1 id="cat_title">DEFAULT CATEGORY</h1>
-
-	<div class="side-panel">
-		<div class="side-Panel-Content">
-			<h1>Categories</h1>
-			<ul>
-				<li>
-					<button id="Straws" class="category-button" onclick="loadProduct('Straws'); ">
-						Straws
-					</button>
-				</li>
-				<li>
-					<button id="Plates" class="category-button" onclick="loadProduct('Plates');">
-						Plates
-					</button>
-				</li>
-				<li>
-					<button id="Utensils" class="category-button" onclick="loadProduct('Utensils');">
-						Utensils
-					</button>
-				</li>
-				<li>
-					<button id="Cups" class="category-button" onclick="loadProduct('Cups');">
-						Cups
-					</button>
-				</li>
-				<li>
-					<button id="Bags" class="category-button" onclick="loadProduct('Bags');">
-						Bags
-					</button>
-				</li>
-			</ul>
+		<div class="side-panel">
+			<div class="side-Panel-Content">
+				<h1>Categories</h1>
+				<ul>
+					<li>
+						<button
+							id="Straws"
+							class="category-button"
+							onclick="loadProduct('Straws'); "
+						>
+							Straws
+						</button>
+					</li>
+					<li>
+						<button
+							id="Plates"
+							class="category-button"
+							onclick="loadProduct('Plates');"
+						>
+							Plates
+						</button>
+					</li>
+					<li>
+						<button
+							id="Utensils"
+							class="category-button"
+							onclick="loadProduct('Utensils');"
+						>
+							Utensils
+						</button>
+					</li>
+					<li>
+						<button
+							id="Cups"
+							class="category-button"
+							onclick="loadProduct('Cups');"
+						>
+							Cups
+						</button>
+					</li>
+					<li>
+						<button
+							id="Bags"
+							class="category-button"
+							onclick="loadProduct('Bags');"
+						>
+							Bags
+						</button>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
 
-	<div class="products-container">
-		<div class="product">
-			<img src="../assets/placeholder/400x400.png" alt="1" />
-			<h3>Product 1</h3>
-			<p>Price: Rs 100</p>
-			<button>Add to cart</button>
+		<div class="products-container">
+			<div class="product">
+				<img src="../assets/placeholder/400x400.png" alt="1" />
+				<h3>Product 1</h3>
+				<p>Price: Rs 100</p>
+				<button>Add to cart</button>
+			</div>
+
+			<div class="product">
+				<img src="../assets/placeholder/400x400.png" alt="2" />
+				<h3>Product 2</h3>
+				<p>Price: Rs 200</p>
+				<button>Add to cart</button>
+			</div>
+
+			<div class="product">
+				<img src="../assets/placeholder/400x400.png" alt="3" />
+				<h3>Product 3</h3>
+				<p>Price: Rs 300</p>
+				<button>Add to cart</button>
+			</div>
+
+			<div class="product">
+				<img src="../assets/placeholder/400x400.png" alt="4" />
+				<h3>Product 4</h3>
+				<p>Price: Rs 400</p>
+				<button>Add to cart</button>
+			</div>
 		</div>
 
-		<div class="product">
-			<img src="../assets/placeholder/400x400.png" alt="2" />
-			<h3>Product 2</h3>
-			<p>Price: Rs 200</p>
-			<button>Add to cart</button>
-		</div>
+		<script>
+			loadProduct("Straws");
+		</script>
+	</body>
 
-		<div class="product">
-			<img src="../assets/placeholder/400x400.png" alt="3" />
-			<h3>Product 3</h3>
-			<p>Price: Rs 300</p>
-			<button>Add to cart</button>
-		</div>
-
-		<div class="product">
-			<img src="../assets/placeholder/400x400.png" alt="4" />
-			<h3>Product 4</h3>
-			<p>Price: Rs 400</p>
-			<button>Add to cart</button>
-		</div>
-	</div>
-
-	<script>
-		loadProduct("Straws");
-	</script>
-</body>
-
-<footer>
-	<object type="text/html" width="100%" height="310px" data="./footer.html"></object>
-</footer>
-
+	<footer>
+		<object
+			type="text/html"
+			width="100%"
+			height="310px"
+			data="./footer.html"
+		></object>
+	</footer>
 </html>
