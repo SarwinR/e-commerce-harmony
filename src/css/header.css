@@ -51,6 +51,8 @@ header {
 
 .main{
     padding-right: 3%;
+    align-items: center;
+    display: flex;
 }
 
 .navbar a.active {
