@@ -1,0 +1,271 @@
+body {
+    align-items: center;
+    justify-content: center;
+    display: contents;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar img {
+    width: 190px;
+    height: 35px;
+    padding-bottom: 4px;
+}
+
+.upper-border-sidebar {
+    border-top: 3px solid #ffffff;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.bottom-border-sidebar {
+    border-top: 3px solid #ffffff;
+    width: 100%;
+    margin-top: 80%;
+}
+
+
+.sidebar {
+    background-color: #BA926E;
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+
+.sidebar a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    text-decoration: none;
+    font-size: 23px;
+    margin: 0px;
+
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+.icons {
+    display: flex;
+    padding: 15px;
+}
+
+.icons .profile {
+    position: absolute;
+    left: 90px;
+    color: #ddd;
+    margin: 0px;
+}
+
+.icons .cart {
+    margin-top: 55px;
+    position: absolute;
+    left: 90px;
+    color: #ddd;
+}
+
+.profile:hover,
+.cart:hover {
+    background-color: #ba926e !important;
+}
+
+
+.icons .profile-button {
+    position: absolute;
+    left: 40px;
+    margin-top: 5px;
+    margin-left: -8px;
+
+
+}
+
+.icons .cart-button {
+    margin-top: 60px;
+    margin-right: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#homeIntro {
+    font-size: 30px;
+    background-color: #88bc52;
+    color: #ffffff;
+    padding: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.background-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 550px;
+    padding-top: 3px;
+}
+
+.center-text {
+    position: absolute;
+    top: 8px;
+    left: 110px;
+    color: black;
+}
+
+#titles {
+    font-size: 30px;
+    background-color: #88bc52;
+    color: #ffffff;
+    padding: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#background-text {
+    font-size: 62px;
+    color: #454545;
+    padding: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.user-name h2 {
+    color: #4f6647;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    margin-top: 0px;
+    text-align: left;
+
+}
+
+.tab-dashboard {
+    position: absolute;
+    width: 50%;
+    align-items: center;
+    background-color: #afacac;
+    margin-left: 25%;
+    border-radius: 10px;
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 3px;
+
+
+}
+
+.tab {
+    text-align: center;
+    align-items: center;
+}
+
+.accountChange {
+
+    position: absolute;
+    margin-top: 100px;
+    padding-left: 20px;
+    margin-left: 25%;
+    border-radius: 10px;
+    background-color: #ba926e;
+}
+
+.accountChange legend {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.accountChange label input {
+    padding-top: 100px;
+}
+
+.first-name input,
+.last-name input,
+.display-email input,
+.col-md-12 input {
+    border-radius: 5px;
+
+}
+
+.first-name label,
+.last-name label,
+.display-email label,
+.col-md-12 label {
+    font-size: 20px;
+
+
+}
+
+.passwordChange {
+    position: absolute;
+
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-top: 250px;
+    margin-left: 25%;
+    background-color: #ba926e;
+}
+
+.passwordChange legend {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.button-save {
+
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 45%;
+}
+
+
+.button-save button {
+    font-size: 15px;
+}
+
+.message {
+    padding-top: 420px;
+    font-size: 20px;
+    color: red;
+}
+
+.logout {
+    position: absolute;
+    margin-left: 90%;
+    border-radius: 10px;
+    margin-top: 7px;
+
+}
+
+.tab {
+    margin-top: 85px;
+    margin-left: 60px;
+}
