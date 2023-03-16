@@ -1,6 +1,6 @@
 .checkout-form {
     width: 50%;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -13,6 +13,7 @@
   .checkout-form form {
     display: flex;
     flex-wrap: wrap;
+    padding: 10px;
   }
   
   .checkout-form .form-group {
@@ -26,24 +27,49 @@
     margin-bottom: 5px;
   }
   
+  textarea {
+    resize: vertical;
+    min-height: 50px;
+  }
+
   .checkout-form input,
   .checkout-form textarea {
-    width: 100%;
+    width: 98%;
     padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
   }
   
   .checkout-form input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 20%;
+    background-color: #333;
+    color: #fff;
+    border: 0;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
   }
   
   .checkout-form input[type="submit"]:hover {
-    background-color: #3e8e41;
+    background-color: wheat;
   }
-  
+
+  /* scroll bar styling */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #d1e5ff;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3c503f;
+    border-radius: 10px;
+  }
