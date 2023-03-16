@@ -1,8 +1,22 @@
 <?php
 require_once "./module/auth/profile.php";
-session_start();
-$user= getUser();
+require_once "./module/auth/token.php";
+
+if (session_status() !== PHP_SESSION_ACTIVE) session_start();
+
+$user = getUser();
+
+$loggedin = false;
+
+if (checkForToken()) {
+	$loggedin = true;
+}
+
+if (isset($_POST['logout'])) {
+	logout();
+}
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -46,9 +60,12 @@ $user= getUser();
             </div>
             <div class="user-name">
             <?php
-				 echo "<h2>".$user["firstName"]." ".$user["lastName"]."</h2>";
-	
-				?> 
+				if ($loggedin) {
+					echo "<h2>" . $user["firstName"] . " " . $user["lastName"] . "</h2>";
+				} else {
+					echo "<h2>Guest</h2>";
+				}
+				?>
             </div>
 
 
