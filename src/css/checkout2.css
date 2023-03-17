@@ -90,7 +90,7 @@ body {
 
 .icons .cart-button {
 	margin-top: 60px;
-	margin-right: 100px;
+	margin-right: 85px;
 }
 
 
@@ -118,6 +118,11 @@ button:hover {
 	width: 35px;
 }
 
+.cart-button img {
+	width: 35px;
+	margin-top: 6px;
+	margin-left: 6px;
+}
 
 .contents-checkout {
 	margin-left: 200px;
