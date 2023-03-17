@@ -25,21 +25,28 @@ $product_id = $_GET['product_id'];
 
 		<div class="upper-border-sidebar"></div>
 		<a href="index2.php">Home</a>
-		<a href="shop.html">Shop</a>
+		<a href="shop2.html">Shop</a>
 		<a href="contactUs2.php">Contact</a>
-		<a href="#">About</a>
+		<a href="about2.html">About</a>
 		<div class="bottom-border-sidebar"></div>
 
 		<div class="icons">
-			<button class="profile-button">
-				<img src="../assets/icons8-customer.png" alt="Logo" />
-			</button>
-			<a class="profile"> Profile</a>
+        <button class="profile-button">
+                <a id="login_txt" href="./authPage.php" target="_top" style="padding: 10px">log in</a>
+                <a id="login_img" href="./profilePage2.php" target="_top">
+                    <img src="../assets/icons8-customer.png" alt="Logo" />
+                  
+                </a>
+            </button>
 
-			<button class="cart-button">
-				<img src="../assets/icons8-shopping-cart.png" alt="Logo" />
-			</button>
-			<a class="cart"> Cart</a>
+            <button class="cart-button">
+                <a href="./cart2.php" target="_top">
+                    
+                    <img src="../assets/icons8-shopping-cart.png"  alt="Logo" />
+                   
+                    
+                </a>
+            </button>
 		</div>
 	</div>
 	<div class="main">
@@ -79,6 +86,7 @@ $product_id = $_GET['product_id'];
 
         </div>
 	</div>
+    <script src="./js/header.js"></script>
 </body>
 
 </html>
