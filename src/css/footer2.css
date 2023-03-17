@@ -4,7 +4,9 @@ body {
 	margin: 0px;
 
 }
-
+html{
+	padding:0px;
+}
 .footer-top {
 	background-color: #BA926E;
 }
