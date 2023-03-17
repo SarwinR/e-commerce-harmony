@@ -123,3 +123,17 @@ button:hover {
 	height: 200px;
 	border-radius: 5%;
 }
+
+/* scroll bar styling */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #d1e5ff
+}
+
+::-webkit-scrollbar-thumb {
+	background: #7599ad;
+	border-radius: 10px;
+}

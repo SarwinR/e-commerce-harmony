@@ -23,7 +23,7 @@ if (isset($_POST['logout'])) {
 
 <head>
 	<meta charset="utf-8" />
-	<title>Shop</title>
+	<title>Harmony</title>
 	<link rel="stylesheet" href="css\index.css" />
 	<script src="./js/shop.js"></script>
 </head>
