@@ -94,12 +94,11 @@ require_once "./module/auth/authentication.php";
 	</div>
     
     </div>
-            
+	<footer>
+			<object type="text/html" width="100%" height="310px" data="./footer2.html"></object>
+		</footer>
     </div>
 
 	<script src="./js/header.js"></script>
-	<footer>
-            <object type="text/html" width="100%" height="280px" data="./footer2.html"></object>
-        </footer>
 </body>
 </html>
