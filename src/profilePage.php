@@ -105,7 +105,9 @@ if (isset($_SESSION['profile_update_error'])) {
         ?>
         </a>
     </div>
-
+    <footer>
+	<object type="text/html" width="100%" height="280px" data="./footer.html"></object>
+</footer>
 </body>
 
 </html>
