@@ -42,7 +42,7 @@ if (isset($_POST['logout'])) {
         <div class="icons">
             <button class="profile-button">
                 <a id="login_txt" href="./authPage.php" target="_top" style="padding: 10px">log in</a>
-                <a id="login_img" href="./profilePage.php" target="_top">
+                <a id="login_img" href="./profilePage2.php" target="_top">
                     <img src="../assets/icons8-customer.png" alt="Logo" />
                   
                 </a>
