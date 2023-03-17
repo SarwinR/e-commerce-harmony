@@ -1,171 +1,153 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Shop</title>
-		<link rel="stylesheet" href="css\shop2.css" />
-		<script src="./js/shop2.js"></script>
-	</head>
 
-	<body>
-		<div class="sidebar">
-			<img src="../assets/Bannerreduced.png" alt="logo" />
+<head>
+	<meta charset="utf-8" />
+	<title>Shop</title>
+	<link rel="stylesheet" href="css\shop2.css" />
+	<script src="./js/shop2.js"></script>
+</head>
 
-			<div class="upper-border-sidebar"></div>
-			<a href="index2.php">Home</a>
-			<a href="shop.html">Shop</a>
-			<a href="contactUs2.php">Contact</a>
-			<a href="#">About</a>
-			<div class="bottom-border-sidebar"></div>
+<body>
+	<div class="sidebar">
+		<img src="../assets/Bannerreduced.png" alt="logo" />
 
-			<div class="icons">
-				<button class="profile-button">
+		<div class="upper-border-sidebar"></div>
+		<a href="index2.php">Home</a>
+		<a href="shop.html">Shop</a>
+		<a href="contactUs2.php">Contact</a>
+		<a href="#">About</a>
+		<div class="bottom-border-sidebar"></div>
+
+		<div class="icons">
+			<button class="profile-button">
+				<a id="login_txt" href="./authPage.php" target="_top" style="padding: 10px">log in</a>
+				<a id="login_img" href="./profilePage.php" target="_top">
 					<img src="../assets/icons8-customer.png" alt="Logo" />
-				</button>
-				<a class="profile"> Profile</a>
 
-				<button class="cart-button">
+				</a>
+			</button>
+
+			<button class="cart-button">
+				<a href="./cart.php" target="_top">
+
 					<img src="../assets/icons8-shopping-cart.png" alt="Logo" />
-				</button>
-				<a class="cart"> Cart</a>
-			</div>
+
+
+				</a>
+			</button>
 		</div>
-		<div class="main">
-			<ul class="navbar">
-				Categories:
-				<li>
-					<button
-						id="Straws"
-						class="category-button"
-						onclick="loadProduct('Straws'); "
-					>
-						Straws
-					</button>
-				</li>
-				<li>
-					<button
-						id="Plates"
-						class="category-button"
-						onclick="loadProduct('Plates');"
-					>
-						Plates
-					</button>
-				</li>
-				<li>
-					<button
-						id="Utensils"
-						class="category-button"
-						onclick="loadProduct('Utensils');"
-					>
-						Utensils
-					</button>
-				</li>
-				<li>
-					<button
-						id="Cups"
-						class="category-button"
-						onclick="loadProduct('Cups');"
-					>
-						Cups
-					</button>
-				</li>
-				<li>
-					<button
-						id="Bags"
-						class="category-button"
-						onclick="loadProduct('Bags');"
-					>
-						Bags
-					</button>
-				</li>
-			</ul>
-
-			<h1 id="titles">Default Category</h1>
-
-			<div class="products-container">
-				<button>
-					<div class="product">
-						<img src="../assets/product_img/Straw.jpg" alt="1" />
-						<div class="text">
-							<h3>Edible Rice Straw</h3>
-							<p>Price: Rs 25</p>
-							<p class="description">
-								Our Edible Rice Straw is an eco-friendly and
-								delicious alternative to plastic straws. Made
-								from rice flour, it's biodegradable,
-								gluten-free, vegan, and has a sweet, nutty
-								flavor. It comes in different sizes, is easy to
-								store, and has a long shelf life
-							</p>
-						</div>
-					</div>
+	</div>
+	<div class="main">
+		<ul class="navbar">
+			Categories:
+			<li>
+				<button id="Straws" class="category-button" onclick="loadProduct('Straws'); ">
+					Straws
 				</button>
+			</li>
+			<li>
+				<button id="Plates" class="category-button" onclick="loadProduct('Plates');">
+					Plates
+				</button>
+			</li>
+			<li>
+				<button id="Utensils" class="category-button" onclick="loadProduct('Utensils');">
+					Utensils
+				</button>
+			</li>
+			<li>
+				<button id="Cups" class="category-button" onclick="loadProduct('Cups');">
+					Cups
+				</button>
+			</li>
+			<li>
+				<button id="Bags" class="category-button" onclick="loadProduct('Bags');">
+					Bags
+				</button>
+			</li>
+		</ul>
 
-				<div class="border"></div>
+		<h1 id="titles">Default Category</h1>
 
+		<div class="products-container">
+			<button>
 				<div class="product">
-					<img src="../assets/product_img/Spoon.jpg" alt="2" />
+					<img src="../assets/product_img/Straw.jpg" alt="1" />
 					<div class="text">
-						<h3>Wooden Spoon</h3>
+						<h3>Edible Rice Straw</h3>
 						<p>Price: Rs 25</p>
 						<p class="description">
-							Crafted from high-quality and eco-friendly wood, our
-							Wooden Spoon is a perfect substitute for plastic
-							utensils. It is sturdy, durable, and will not melt
-							or leach harmful chemicals into your food.
+							Our Edible Rice Straw is an eco-friendly and
+							delicious alternative to plastic straws. Made
+							from rice flour, it's biodegradable,
+							gluten-free, vegan, and has a sweet, nutty
+							flavor. It comes in different sizes, is easy to
+							store, and has a long shelf life
 						</p>
 					</div>
 				</div>
+			</button>
 
-				<div class="border"></div>
+			<div class="border"></div>
 
-				<div class="product">
-					<img
-						src="../assets/product_img/Fork.jpg.crdownload"
-						alt="3"
-					/>
-					<div class="text">
-						<h3>Wooden Fork</h3>
-						<p>Price: Rs 25</p>
-						<p class="description">
-							Crafted from high-quality and eco-friendly wood, our
-							Wooden Fork is a perfect substitute for plastic
-							utensils. It is sturdy, durable, and will not melt
-							or leach harmful chemicals into your food.
-						</p>
-					</div>
-				</div>
-
-				<div class="border"></div>
-
-				<div class="product">
-					<img src="../assets/product_img/Takeaway Box.jpg" alt="4" />
-					<div class="text">
-						<h3>Bamboo Takeaway Box</h3>
-						<p>Price: Rs 25</p>
-						<p class="description">
-							Made from sustainable bamboo, our Takeaway Box is a
-							durable and practical alternative to single-use
-							plastic containers. It is lightweight, leak-proof,
-							and comes with a secure lid, ensuring your food
-							stays fresh and safe.
-						</p>
-					</div>
+			<div class="product">
+				<img src="../assets/product_img/Spoon.jpg" alt="2" />
+				<div class="text">
+					<h3>Wooden Spoon</h3>
+					<p>Price: Rs 25</p>
+					<p class="description">
+						Crafted from high-quality and eco-friendly wood, our
+						Wooden Spoon is a perfect substitute for plastic
+						utensils. It is sturdy, durable, and will not melt
+						or leach harmful chemicals into your food.
+					</p>
 				</div>
 			</div>
 
-			<script>
-				loadProduct("Straws");
-			</script>
+			<div class="border"></div>
 
-			<footer>
-				<object
-					type="text/html"
-					width="100%"
-					height="310px"
-					data="./footer2.html"
-				></object>
-			</footer>
+			<div class="product">
+				<img src="../assets/product_img/Fork.jpg.crdownload" alt="3" />
+				<div class="text">
+					<h3>Wooden Fork</h3>
+					<p>Price: Rs 25</p>
+					<p class="description">
+						Crafted from high-quality and eco-friendly wood, our
+						Wooden Fork is a perfect substitute for plastic
+						utensils. It is sturdy, durable, and will not melt
+						or leach harmful chemicals into your food.
+					</p>
+				</div>
+			</div>
+
+			<div class="border"></div>
+
+			<div class="product">
+				<img src="../assets/product_img/Takeaway Box.jpg" alt="4" />
+				<div class="text">
+					<h3>Bamboo Takeaway Box</h3>
+					<p>Price: Rs 25</p>
+					<p class="description">
+						Made from sustainable bamboo, our Takeaway Box is a
+						durable and practical alternative to single-use
+						plastic containers. It is lightweight, leak-proof,
+						and comes with a secure lid, ensuring your food
+						stays fresh and safe.
+					</p>
+				</div>
+			</div>
 		</div>
-	</body>
+
+		<script>
+			loadProduct("Straws");
+		</script>
+
+		<footer>
+			<object type="text/html" width="100%" height="310px" data="./footer2.html"></object>
+		</footer>
+	</div>
+	<script src="./js/header.js"></script>
+</body>
+
 </html>
