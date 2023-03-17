@@ -1,0 +1,138 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.sidebar h2 {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.sidebar img {
+	width: 190px;
+	height: 35px;
+	padding-bottom: 4px;
+}
+
+.upper-border-sidebar {
+	border-top: 3px solid #ffffff;
+	width: 100%;
+	padding-bottom: 60px;
+}
+
+.bottom-border-sidebar {
+	border-top: 3px solid #ffffff;
+	width: 100%;
+	margin-top: 80%;
+}
+
+.sidebar {
+	background-color: #ba926e;
+	height: 100vh;
+	width: 200px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.sidebar a {
+	display: block;
+	color: rgb(255, 255, 255);
+	padding: 16px;
+	text-decoration: none;
+	font-size: 23px;
+	margin: 0px;
+}
+
+.sidebar a:hover {
+	background-color: #ddd;
+}
+
+.icons {
+	display: flex;
+	padding: 15px;
+}
+
+.icons .profile {
+	position: absolute;
+	left: 90px;
+	color: #ddd;
+	margin: 0px;
+}
+
+.icons .cart {
+	margin-top: 55px;
+	position: absolute;
+	left: 90px;
+	color: #ddd;
+}
+
+.profile:hover,
+.cart:hover {
+	background-color: #ba926e !important;
+}
+
+.icons .profile-button {
+	position: absolute;
+	left: 40px;
+	margin-top: 5px;
+	margin-left: -8px;
+}
+
+.icons .cart-button {
+	margin-top: 60px;
+	margin-right: 100px;
+}
+
+
+button:hover {
+	background-color: #b88d5b91;
+	color: white;
+}
+
+.navbar button {
+	background-color: #b88d5b91;
+	border: 2px solid white;
+	border-radius: 5px;
+	text-align: center;
+	transition-duration: 0.4s;
+	color: #ffffff;
+}
+
+.navbar button:hover {
+	background-color: white;
+	color: rgb(0, 0, 0);
+	border-color: #b88d5b91;
+}
+
+.profile-button img {
+	width: 35px;
+}
+
+
+/* scroll bar styling */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #3c503f;
+	border-radius: 10px;
+}
+
+
+
+
