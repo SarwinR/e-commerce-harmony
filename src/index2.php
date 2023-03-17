@@ -79,7 +79,7 @@ if (isset($_POST['logout'])) {
 
             <h1 id="titles">Featured Products</h1>
 
-            <button>
+            <button class="product-button">
                 <div class="products-container">
                     <div class="product">
                         <img src="../assets/product_img/Straw.jpg" alt="1" />
@@ -99,7 +99,7 @@ if (isset($_POST['logout'])) {
             <div class="border"></div>
             <div class="border"></div>
 
-            <button>
+            <button class="product-button">
                 <div class="product">
                     <img src="../assets/product_img/Spoon.jpg" alt="2" />
                     <div class="text">
@@ -117,7 +117,7 @@ if (isset($_POST['logout'])) {
             <div class="border"></div>
             <div class="border"></div>
 
-            <button>
+            <button class="product-button">
                 <div class="product">
                     <img src="../assets/product_img/Fork.jpg.crdownload" alt="3" />
                     <div class="text">
@@ -135,7 +135,7 @@ if (isset($_POST['logout'])) {
             <div class="border"></div>
             <div class="border"></div>
 
-            <button>
+            <button class="product-button">
                 <div class="product">
                     <img src="../assets/product_img/Takeaway Box.jpg" alt="4" />
                     <div class="text">
@@ -156,11 +156,11 @@ if (isset($_POST['logout'])) {
             <div class="border"></div>
 
             <div class="hyper-button">
-                <button id="shop-more-button" type="button">Shop More</button>
+                <button id="shop-more-button" type="button" onclick="document.location='shop2.html'">Shop More</button>
             </div>
         </div>
 
-        <h1 id="titles">Testimonials</h1>
+        <h1 id=" titles">Testimonials</h1>
 
         <div class="testimonials-container">
             <div class="testimonial">
