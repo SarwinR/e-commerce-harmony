@@ -50,7 +50,10 @@ if (isset($_POST['logout'])) {
 
             <button class="cart-button">
                 <a href="./cart.php" target="_top">
-                    <img src="../assets/icons8-shopping-cart.png" alt="Logo" />
+                    
+                    <img src="../assets/icons8-shopping-cart.png"  alt="Logo" />
+                   
+                    
                 </a>
             </button>
         </div>

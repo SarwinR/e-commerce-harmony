@@ -61,44 +61,70 @@ body {
     background-color: #ddd;
 }
 
-.icons {
-    display: flex;
-    padding: 15px;
-}
 
-.icons .profile {
-    position: absolute;
-    left: 90px;
-    color: #ddd;
-    margin: 0px;
-}
 
-.icons .cart {
-    margin-top: 55px;
-    position: absolute;
-    left: 90px;
-    color: #ddd;
-}
-
-.profile:hover,
-.cart:hover {
-    background-color: #ba926e !important;
-}
 
 
 .icons .profile-button {
     position: absolute;
     left: 40px;
-    margin-top: 5px;
-    margin-left: -8px;
+    margin-top: 20px;
+    margin-left: 8px;
+    width: 100px;
 
+}
 
+#login_txt {
+    color: black;
+
+}
+
+#login_img {
+    width: 50px;
+    height: 10px;
+
+}
+
+#login_img img {
+    width: 40px;
+
+    margin-top: -10px;
 }
 
 .icons .cart-button {
-    margin-top: 60px;
-    margin-right: 100px;
+    margin-top: 90px;
+    margin-right: 85px;
+    width: 100px;
+    height: 50px;
 }
+
+.cart-button a {
+    margin-left: -5px !important;
+    margin-bottom: 2px !important;
+    padding: 0px !important;
+}
+
+.cart-button img {
+    width: 35px;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+
+.cart-button {
+    margin-left: 80px;
+
+}
+
+.cart-text {
+    position: flex;
+    left: 100px;
+    bottom: 50px;
+}
+
+.cart-text:hover {
+    background-color: #ba926e !important;
+}
+
 
 .main {
     margin-left: 200px;
@@ -243,18 +269,7 @@ button:hover {
     color: white;
 }
 
-.profile-button img {
-    width: 35px;
 
-}
-
-.cart-button img {
-    width: 35px;
-}
-
-.cart-button {
-    margin-left: 15px;
-}
 
 
 

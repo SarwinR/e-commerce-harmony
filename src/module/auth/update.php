@@ -70,8 +70,12 @@ function update($firstName, $lastName, $email, $currentPassword, $newPassword, $
             } else {
                 return "Update unsuccessful";
             }
-        } else {
-            return "Update unsuccessful";
+
+
+        } 
+        else 
+        {
+            return "update successful";
         }
     }
 }
