@@ -56,7 +56,7 @@ if (isset($_POST['logout'])) {
 
                 </a>
             </button>
-        </div>
+    </div>
 
     </div>
     <div class="main">
@@ -73,91 +73,88 @@ if (isset($_POST['logout'])) {
                     echo "<h2>Guest</h2>";
                 }
                 ?>
+        </div>
+
+        <h1 id="titles">Featured Products</h1>
+
+        <button class="product-button">
+            <div class="products-container">
+                <div class="product">
+                    <img src="../assets/product_img/Straw.jpg" alt="1" />
+                    <div class="text">
+                        <h3>Edible Rice Straw</h3>
+                        <p>Price: Rs 25</p>
+                        <p class="description">Our Edible Rice Straw is an eco-friendly
+                            and delicious alternative to plastic straws.
+                            Made from rice flour, it's biodegradable,
+                            gluten-free, vegan, and has a sweet, nutty
+                            flavor. It comes in different sizes, is easy
+                            to store, and has a long shelf life</p>
+                    </div>
+                </div>
+        </button>
+
+        <div class="border"></div>
+        <div class="border"></div>
+
+        <button class="product-button">
+            <div class="product">
+                <img src="../assets/product_img/Spoon.jpg" alt="2" />
+                <div class="text">
+                    <h3>Wooden Spoon</h3>
+                    <p>Price: Rs 25</p>
+                    <p class="description">Crafted from high-quality
+                        and eco-friendly wood, our Wooden Spoon is a
+                        perfect substitute for plastic utensils. It is
+                        sturdy, durable, and will not melt or leach
+                        harmful chemicals into your food. </p>
+                </div>
             </div>
+        </button>
 
+        <div class="border"></div>
+        <div class="border"></div>
 
-
-            <h1 id="titles">Featured Products</h1>
-
-            <button class="product-button">
-                <div class="products-container">
-                    <div class="product">
-                        <img src="../assets/product_img/Straw.jpg" alt="1" />
-                        <div class="text">
-                            <h3>Edible Rice Straw</h3>
-                            <p>Price: Rs 25</p>
-                            <p class="description">Our Edible Rice Straw is an eco-friendly
-                                and delicious alternative to plastic straws.
-                                Made from rice flour, it's biodegradable,
-                                gluten-free, vegan, and has a sweet, nutty
-                                flavor. It comes in different sizes, is easy
-                                to store, and has a long shelf life</p>
-                        </div>
-                    </div>
-            </button>
-
-            <div class="border"></div>
-            <div class="border"></div>
-
-            <button class="product-button">
-                <div class="product">
-                    <img src="../assets/product_img/Spoon.jpg" alt="2" />
-                    <div class="text">
-                        <h3>Wooden Spoon</h3>
-                        <p>Price: Rs 25</p>
-                        <p class="description">Crafted from high-quality
-                            and eco-friendly wood, our Wooden Spoon is a
-                            perfect substitute for plastic utensils. It is
-                            sturdy, durable, and will not melt or leach
-                            harmful chemicals into your food. </p>
-                    </div>
+        <button class="product-button">
+            <div class="product">
+                <img src="../assets/product_img/Fork.jpg.crdownload" alt="3" />
+                <div class="text">
+                    <h3>Wooden Fork</h3>
+                    <p>Price: Rs 25</p>
+                    <p class="description">Crafted from high-quality
+                        and eco-friendly wood, our Wooden Fork is a
+                        perfect substitute for plastic utensils. It is
+                        sturdy, durable, and will not melt or leach
+                        harmful chemicals into your food. </p>
                 </div>
-            </button>
-
-            <div class="border"></div>
-            <div class="border"></div>
-
-            <button class="product-button">
-                <div class="product">
-                    <img src="../assets/product_img/Fork.jpg.crdownload" alt="3" />
-                    <div class="text">
-                        <h3>Wooden Fork</h3>
-                        <p>Price: Rs 25</p>
-                        <p class="description">Crafted from high-quality
-                            and eco-friendly wood, our Wooden Fork is a
-                            perfect substitute for plastic utensils. It is
-                            sturdy, durable, and will not melt or leach
-                            harmful chemicals into your food. </p>
-                    </div>
-                </div>
-            </button>
-
-            <div class="border"></div>
-            <div class="border"></div>
-
-            <button class="product-button">
-                <div class="product">
-                    <img src="../assets/product_img/Takeaway Box.jpg" alt="4" />
-                    <div class="text">
-                        <h3>Bamboo Takeaway Box</h3>
-                        <p>Price: Rs 25</p>
-                        <p class="description"> Made from sustainable bamboo,
-                            our Takeaway Box is a durable and practical
-                            alternative to single-use plastic containers.
-                            It is lightweight, leak-proof, and comes with a
-                            secure lid, ensuring your food stays fresh and safe.
-
-                        </p>
-                    </div>
-                </div>
-            </button>
-
-            <div class="border"></div>
-            <div class="border"></div>
-
-            <div class="hyper-button">
-                <button id="shop-more-button" type="button" onclick="document.location='shop2.html'">Shop More</button>
             </div>
+        </button>
+
+        <div class="border"></div>
+        <div class="border"></div>
+
+        <button class="product-button">
+            <div class="product">
+                <img src="../assets/product_img/Takeaway Box.jpg" alt="4" />
+                <div class="text">
+                    <h3>Bamboo Takeaway Box</h3>
+                    <p>Price: Rs 25</p>
+                    <p class="description"> Made from sustainable bamboo,
+                        our Takeaway Box is a durable and practical
+                        alternative to single-use plastic containers.
+                        It is lightweight, leak-proof, and comes with a
+                        secure lid, ensuring your food stays fresh and safe.
+
+                    </p>
+                </div>
+            </div>
+        </button>
+
+        <div class="border"></div>
+        <div class="border"></div>
+
+        <div class="hyper-button">
+            <button id="shop-more-button" type="button" onclick="document.location='shop2.html'">Shop More</button>
         </div>
 
         <h1 id=" titles">Testimonials</h1>
@@ -181,8 +178,6 @@ if (isset($_POST['logout'])) {
                 <br>
                 <h5>-Farhaan Nazirkhan</h5>
             </div>
-
-
         </div>
 
 

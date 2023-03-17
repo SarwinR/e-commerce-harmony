@@ -169,7 +169,6 @@ body {
 
 .products-container {
 	min-height: 300px;
-
 	display: inline;
 	align-items: center;
 	padding-top: 20px;
@@ -208,7 +207,6 @@ body {
 	border-radius: 20px;
 	margin-bottom: 5px;
 	background-image: linear-gradient(to left, rgba(255, 0, 0, 0), #b88d5b21);
-	/* display:flex;  */
 }
 
 .testimonials-container {

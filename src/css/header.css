@@ -92,38 +92,6 @@ button:hover {
     border-color: #ffffff;
 }
 
-.dropdown {
-    display: inline-block;
-    position: relative;
-}
-
-.dropdown div {
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    visibility: hidden;
-    position: absolute;
-    max-width: 250%;
-    transition: .3s;
-}
-
-.dropdown:hover div {
-    visibility: visible;
-}
-
-.dropdown div a {
-    display: block;
-    text-decoration: none;
-    padding: 15px;
-    white-space: nowrap;
-    color: #000;
-}
-
-.dropdown div a:hover {
-
-    color: #89BD53;
-}
-
 
 /* need to check that */
 @media (max-width: 1280px) {
