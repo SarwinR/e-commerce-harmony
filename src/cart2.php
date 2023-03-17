@@ -60,12 +60,10 @@ require_once './module/cart/items.php';
             </table>
           
             <div class="total-price"></div>
-            <br>
           
             <form action="checkout2.html" method="post">
-            <button type="checkout1" value="Checkout">Checkout</button>
+            <button class="checkout-btn" type="checkout1" value="Checkout">Checkout</button>
             </form>
-            <br>
 
             <footer>
                 <object type="text/html" width="100%" height="280px" data="./footer2.html"></object>

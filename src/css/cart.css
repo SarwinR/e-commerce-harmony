@@ -48,12 +48,18 @@
   
   
   
-  /*.checkout-button {
+  .checkout-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: rgb(186, 189, 186);
-    color: rgb(197, 118, 118);
-    text-decoration: none;
     margin-top: 20px;
-  }*/
-  
+    margin-bottom: 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .checkout-btn:hover {
+    background-color: wheat;
+  }
