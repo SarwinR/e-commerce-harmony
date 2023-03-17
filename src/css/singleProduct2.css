@@ -1,0 +1,371 @@
+/* Main Contents */
+.body-wrapper {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: auto;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.col-left {
+	width: 50%;
+	text-align: left;
+	box-sizing: border-box;
+	padding-left: 7px;
+}
+
+.col-right {
+	width: 50%;
+	text-align: right;
+	box-sizing: border-box;
+}
+
+.col-center {
+	width: 50%;
+	text-align: center;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.col-multi {
+	width: 50%;
+	text-align: center;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 0px;
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.section-divider {
+	border-top: 1px solid #ddd;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/* Login / Registration Page */
+.personal-details-form {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.error-text {
+	color: #ff0000;
+	font-size: 14px;
+	translate: (-10px);
+}
+
+.personal-details-form input[type="text"],
+.personal-details-form input[type="email"],
+.personal-details-form input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.personal-details-form input[type="checkbox"] {
+	float: left;
+	margin-right: 15px;
+}
+
+.personal-details-form button[type="submit"],
+.personal-details-form input[type="submit"] {
+	width: 100%;
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+	border: 0;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.personal-details-form button[type="submit"]:hover,
+.personal-details-form input[type="submit"]:hover {
+	background-color: wheat;
+}
+
+.checkbox-text {
+	font-size: 14px;
+	margin-bottom: 20px;
+	display: block;
+	text-align: left;
+}
+
+/* Single Product Page */
+.album {
+	min-width: 400px;
+	min-height: 400px;
+	max-width: 400px;
+	max-height: 400px;
+}
+
+.rating-container {
+	color: #ba926e;
+	display: flex;
+	align-items: center;
+}
+
+.rating-text {
+	margin-right: 5px;
+	font-size: 15px;
+}
+
+.rating-value {
+	font-size: 15px;
+}
+
+.product-title {
+	margin-top: 0px;
+}
+
+.quantity-container input[type="number"] {
+	width: 11%;
+}
+
+.but-left {
+	width: 50%;
+	padding: 12px;
+}
+
+.but-center {
+	margin-top: 30px;
+	margin-left: 30%;
+	padding: 7px;
+}
+
+/* button{
+	background-color: #80B500;
+} */
+
+/* Comment */
+.reviews {
+	margin: 0;
+	padding: 0;
+}
+
+.reviews li {
+	list-style: none;
+	padding-top: 10px;
+}
+
+.review-container {
+	display: flex;
+	position: relative;
+}
+
+.comment {
+	overflow: hidden;
+	padding-left: 20px;
+}
+
+.comment .rating-container i {
+	font-style: normal;
+	font-size: 15px;
+}
+
+.comment h6 {
+	margin-top: 0px;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+
+.comment-date {
+	position: absolute;
+	padding: 0 18px 0;
+	border: 2px solid #ba926e;
+	border-radius: 25px;
+	line-height: 25px;
+	top: 0;
+	right: 0;
+}
+
+.review-form {
+	background-color: #f0f4f7;
+	padding: 30px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	width: 100%;
+}
+
+.review-form h4 {
+	margin-top: 0px;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+.review-form h6 {
+	margin-top: 0;
+	margin-right: 15px;
+	margin-bottom: 0;
+	font-size: 16px;
+}
+
+.review-form .review-container {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.review-form .review-container label {
+	margin-right: 8px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.review-form .review-container input {
+	padding-left: 5px;
+	width: 45px;
+}
+
+textarea {
+	resize: vertical;
+	padding: 15px 20px;
+	min-height: 150px;
+}
+
+.review-form input[type="text"],
+.review-form input[type="email"],
+textarea {
+	background-color: #fff;
+	border: 2px solid;
+	border-color: #f0f4f7;
+	height: 65px;
+	box-shadow: none;
+	padding-left: 20px;
+	font-size: 16px;
+	color: #071c1f;
+	width: 92%;
+	margin-bottom: 30px;
+	border-radius: 0;
+	padding-right: 40px;
+}
+
+.review-form input[type="submit"] {
+	padding: 10px;
+	margin-left: 5px;
+	background-color: #333;
+	color: #fff;
+	border: 0;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.review-form input[type="submit"]:hover {
+	background-color: wheat;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #d1e5ff
+}
+
+::-webkit-scrollbar-thumb {
+	background: #7599ad;
+	border-radius: 10px;
+}
+
+.contact-form {
+	background-color: #ba926e;
+	padding: 30px;
+	padding-top: 10px;
+	margin-top: 60px;
+	width: 100%;
+	border-radius: 20px;
+}
+
+.contact-form h4 {
+	margin-top: 0px;
+	margin-bottom: 30px;
+	font-size: 25px;
+}
+
+.contact-form input[type="text"] {
+	background-color: #fff;
+	border: 2px solid;
+	border-color: #f0f4f7;
+	height: 50px;
+	box-shadow: none;
+	padding-left: 20px;
+	font-size: 16px;
+	color: #071c1f;
+	width: 42%;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	padding-right: 40px;
+}
+
+.contact-form input[type="email"],
+textarea {
+	background-color: #fff;
+	border: 2px solid;
+	border-color: #f0f4f7;
+	height: 50px;
+	box-shadow: none;
+	padding-left: 20px;
+	font-size: 16px;
+	color: #071c1f;
+	width: 92%;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	padding-right: 40px;
+}
+
+.contact-form textarea {
+	resize: vertical;
+	padding: 15px 20px;
+	min-height: 300px;
+}
+
+.contact-form input[type="submit"] {
+	padding: 10px;
+	margin-left: 5px;
+	background-color: #333;
+	color: #fff;
+	border: 0;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.contact-form input[type="submit"]:hover {
+	background-color: wheat;
+}
