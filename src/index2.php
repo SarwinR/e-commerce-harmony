@@ -44,16 +44,16 @@ if (isset($_POST['logout'])) {
                 <a id="login_txt" href="./authPage2.php" target="_top" style="padding: 10px">log in</a>
                 <a id="login_img" href="./profilePage2.php" target="_top">
                     <img src="../assets/icons8-customer.png" alt="Logo" />
-                  
+
                 </a>
             </button>
 
             <button class="cart-button">
                 <a href="./cart2.php" target="_top">
-                    
-                    <img src="../assets/icons8-shopping-cart.png"  alt="Logo" />
-                   
-                    
+
+                    <img src="../assets/icons8-shopping-cart.png" alt="Logo" />
+
+
                 </a>
             </button>
         </div>
@@ -79,30 +79,32 @@ if (isset($_POST['logout'])) {
 
             <h1 id="titles">Featured Products</h1>
 
-            <div class="products-container">
-                <div class="product">
-                    <img src="../assets/product_img/Straw.jpg" alt="1" />
-                    <div class="text">
-                        <h3>Edible Rice Straw</h3>
-                        <p>Price: Rs 25</p>
-                        <button>Add to cart</button>
-                        <p class="description">Our Edible Rice Straw is an eco-friendly
-                            and delicious alternative to plastic straws.
-                            Made from rice flour, it's biodegradable,
-                            gluten-free, vegan, and has a sweet, nutty
-                            flavor. It comes in different sizes, is easy
-                            to store, and has a long shelf life</p>
+            <button>
+                <div class="products-container">
+                    <div class="product">
+                        <img src="../assets/product_img/Straw.jpg" alt="1" />
+                        <div class="text">
+                            <h3>Edible Rice Straw</h3>
+                            <p>Price: Rs 25</p>
+                            <p class="description">Our Edible Rice Straw is an eco-friendly
+                                and delicious alternative to plastic straws.
+                                Made from rice flour, it's biodegradable,
+                                gluten-free, vegan, and has a sweet, nutty
+                                flavor. It comes in different sizes, is easy
+                                to store, and has a long shelf life</p>
+                        </div>
                     </div>
-                </div>
+            </button>
 
-                <div class="border"></div>
+            <div class="border"></div>
+            <div class="border"></div>
 
+            <button>
                 <div class="product">
                     <img src="../assets/product_img/Spoon.jpg" alt="2" />
                     <div class="text">
                         <h3>Wooden Spoon</h3>
                         <p>Price: Rs 25</p>
-                        <button>Add to cart</button>
                         <p class="description">Crafted from high-quality
                             and eco-friendly wood, our Wooden Spoon is a
                             perfect substitute for plastic utensils. It is
@@ -110,15 +112,17 @@ if (isset($_POST['logout'])) {
                             harmful chemicals into your food. </p>
                     </div>
                 </div>
+            </button>
 
-                <div class="border"></div>
+            <div class="border"></div>
+            <div class="border"></div>
 
+            <button>
                 <div class="product">
                     <img src="../assets/product_img/Fork.jpg.crdownload" alt="3" />
                     <div class="text">
                         <h3>Wooden Fork</h3>
                         <p>Price: Rs 25</p>
-                        <button>Add to cart</button>
                         <p class="description">Crafted from high-quality
                             and eco-friendly wood, our Wooden Fork is a
                             perfect substitute for plastic utensils. It is
@@ -126,16 +130,17 @@ if (isset($_POST['logout'])) {
                             harmful chemicals into your food. </p>
                     </div>
                 </div>
+            </button>
 
-                <div class="border"></div>
+            <div class="border"></div>
+            <div class="border"></div>
 
-
+            <button>
                 <div class="product">
                     <img src="../assets/product_img/Takeaway Box.jpg" alt="4" />
                     <div class="text">
                         <h3>Bamboo Takeaway Box</h3>
                         <p>Price: Rs 25</p>
-                        <button>Add to cart</button>
                         <p class="description"> Made from sustainable bamboo,
                             our Takeaway Box is a durable and practical
                             alternative to single-use plastic containers.
@@ -145,44 +150,49 @@ if (isset($_POST['logout'])) {
                         </p>
                     </div>
                 </div>
-                <div class="hyper-button">
-                    <button id="shop-more-button" type="button">Shop More</button>
-                </div>
+            </button>
+
+            <div class="border"></div>
+            <div class="border"></div>
+
+            <div class="hyper-button">
+                <button id="shop-more-button" type="button">Shop More</button>
+            </div>
+        </div>
+
+        <h1 id="titles">Testimonials</h1>
+
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <h3>"Overall, I would highly recommend
+                    this online shop to anyone looking for a seamless
+                    shopping experience, top-notch customer service, and high-quality products.
+                    Thank you for making my shopping experience a truly enjoyable one!"
+                </h3>
+                <br>
+                <h5>-Sarwin Rajiah</h5>
             </div>
 
-            <h1 id="titles">Testimonials</h1>
-
-            <div class="testimonials-container">
-                <div class="testimonial">
-                    <h3>"Overall, I would highly recommend
-                        this online shop to anyone looking for a seamless
-                        shopping experience, top-notch customer service, and high-quality products.
-                        Thank you for making my shopping experience a truly enjoyable one!"
-                    </h3>
-                    <br>
-                    <h5>-Sarwin Rajiah</h5>
-                </div>
-
-                <div class="testimonial">
-                    <h3>"The customer service at Harmony is top-notch. I had a question about a product, and they were so
-                        helpful and informative. It's clear that they really care about their customers and making a
-                        positive impact on the planet."
-                    </h3>
-                    <br>
-                    <h5>-Farhaan Nazirkhan</h5>
-                </div>
-
-
+            <div class="testimonial">
+                <h3>"The customer service at Harmony is top-notch. I had a question about a product, and they were so
+                    helpful and informative. It's clear that they really care about their customers and making a
+                    positive impact on the planet."
+                </h3>
+                <br>
+                <h5>-Farhaan Nazirkhan</h5>
             </div>
 
-
-            <footer>
-                <object type="text/html" width="100%" height="280px" data="./footer2.html"></object>
-            </footer>
 
         </div>
 
-        <script src="./js/header.js"></script>
+
+        <footer>
+            <object type="text/html" width="100%" height="280px" data="./footer2.html"></object>
+        </footer>
+
+    </div>
+
+    <script src="./js/header.js"></script>
 </body>
 
 </html>
