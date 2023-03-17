@@ -1,7 +1,140 @@
+/*sidebar*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.sidebar h2 {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.sidebar img {
+	width: 190px;
+	height: 35px;
+	padding-bottom: 4px;
+}
+
+.upper-border-sidebar {
+	border-top: 3px solid #ffffff;
+	width: 100%;
+	padding-bottom: 60px;
+}
+
+.bottom-border-sidebar {
+	border-top: 3px solid #ffffff;
+	width: 100%;
+	margin-top: 80%;
+}
+
+
+.sidebar {
+	background-color: #BA926E;
+	height: 100vh;
+	width: 200px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+
+}
+
+
+.sidebar a {
+	display: block;
+	color: rgb(255, 255, 255);
+	padding: 16px;
+	text-decoration: none;
+	font-size: 23px;
+	margin: 0px;
+
+}
+
+.sidebar a:hover {
+	background-color: #ddd;
+}
+
+
+
+
+
+.icons .profile-button {
+	position: absolute;
+	left: 40px;
+	margin-top: 20px;
+	margin-left: 8px;
+	width: 100px;
+
+}
+
+#login_txt {
+	color: black;
+
+}
+
+#login_img {
+	width: 50px;
+	height: 10px;
+
+}
+
+#login_img img {
+	width: 40px;
+
+	margin-top: -10px;
+}
+
+.icons .cart-button {
+	margin-top: 90px;
+	margin-right: 85px;
+	width: 100px;
+	height: 50px;
+}
+
+.cart-button a {
+	margin-left: -5px !important;
+	margin-bottom: 2px !important;
+	padding: 0px !important;
+}
+
+.cart-button img {
+	width: 35px;
+	margin-top: 6px;
+	margin-left: 6px;
+}
+
+.cart-button {
+	margin-left: 80px;
+
+}
+
+.cart-text {
+	position: flex;
+	left: 100px;
+	bottom: 50px;
+}
+
+.cart-text:hover {
+	background-color: #ba926e !important;
+}
+
+
+
+
+
 /* Main Contents */
 .body-wrapper {
 	display: flex;
-	justify-content: center;
+	justify-content: right;
 	height: 100vh;
 }
 

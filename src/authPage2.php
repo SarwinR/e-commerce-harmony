@@ -23,21 +23,30 @@ require_once "./module/auth/authentication.php";
         <img src="../assets/Bannerreduced.png" alt="logo">
 
         <div class="upper-border-sidebar"></div>
-		<a href="home2.html">Home</a>
+		<a href="index2.php">Home</a>
 		<a href="shop2.html">Shop</a>
 		<a href="contactUs2.php">Contact</a>
-		<a href="#">About</a>
+		<a href="about2.html">About</a>
         <div class="bottom-border-sidebar"></div>
         
-    <div class="icons">
-        <button class="profile-button">
-            <img src="../assets/icons8-customer.png" alt="Logo" />
-        </button>
-        
-        <button class="cart-button">
-            <img src="../assets/icons8-shopping-cart.png" alt="Logo" />
-        </button>
-    </div>
+		<div class="icons">
+            <button class="profile-button">
+                <a id="login_txt" href="./authPage2.php" target="_top" style="padding: 10px">log in</a>
+                <a id="login_img" href="./profilePage2.php" target="_top">
+                    <img src="../assets/icons8-customer.png" alt="Logo" />
+                  
+                </a>
+            </button>
+
+            <button class="cart-button">
+                <a href="./cart2.php" target="_top">
+                    
+                    <img src="../assets/icons8-shopping-cart.png"  alt="Logo" />
+                   
+                    
+                </a>
+            </button>
+        </div>
     
 	</div>
 	<div class="main">
@@ -88,6 +97,6 @@ require_once "./module/auth/authentication.php";
             
     </div>
 
-
+	<script src="./js/header.js"></script>
 </body>
 </html>
