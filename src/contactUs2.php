@@ -6,7 +6,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Shop</title>
+		<title>Contact Us</title>
 		<link rel="stylesheet" href="css\contactUs2.css" />
 		<script src="./js/shop.js"></script>
 	</head>
@@ -43,7 +43,7 @@
 		<div class="main">
 		<div class="container">
             <div class="col-center">
-                <form method="post" class="contact-form" action="./module/contact/contact.php">
+                <form method="post" class="contact-form" action="./module/contact/contact2.php">
                     <h4>Contact Us</h4>
                     <input required="required" minlength="3" maxlength="64" type="text" name="firstName" placeholder="First Name" />
                     <input required="required" minlength="3" maxlength="64" type="text" name="lastName" placeholder="Last Name" />
