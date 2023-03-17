@@ -232,7 +232,24 @@ button {
 	text-align: center;
 	transition-duration: 0.4s;
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
+.images img {
+    width: 48%;
+    margin-left: 3%;
+    margin-top: 4%;
+}
+
+.aboutus p {
+    width: 40%;
+    margin-left: 55%;
+    margin-top: -34%;
+
+}
 button:hover {
 	background-color: #b88d5b91;
 }
