@@ -25,7 +25,6 @@ img {
 	padding-top: 3px;
 }
 
-/* left text */
 .center-text {
 	position: absolute;
 	top: 8px;
@@ -53,18 +52,14 @@ img {
 
 .user-name h2 {
 	color: #29720e;
-
 	padding-left: 5px;
 	margin-top: 10px;
 	text-align: left;
 
 }
 
-
-
 .products-container {
 	min-height: 300px;
-
 	display: grid;
 	grid-template-columns: auto auto auto;
 	grid-gap: 20px;
@@ -86,9 +81,6 @@ img {
 .hyper-button {
 	text-align: center;
 }
-
-
-
 
 button {
 	background-color: #ffffff;
@@ -121,13 +113,6 @@ button:hover {
 }
 
 
-
-.product h3 {}
-
-.product p {}
-
-.product button {}
-
 .product img {
 	width: 200px;
 	height: 200px;
@@ -137,14 +122,11 @@ button:hover {
 
 .testimonials-container {
 	min-height: 300px;
-
 	display: grid;
 	grid-template-columns: auto auto auto;
 	grid-gap: 20px;
-
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	align-items: center;
-
 	padding: 20px 20px;
 }
 
