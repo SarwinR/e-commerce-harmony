@@ -43,7 +43,7 @@ $user= getUser();
             </button>
 
             <button class="cart-button">
-                <a href="./cart.php" target="_top">
+                <a href="./cart2.php" target="_top">
                     
                     <img src="../assets/icons8-shopping-cart.png"  alt="Logo" />
                    
