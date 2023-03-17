@@ -1,3 +1,10 @@
+<?php
+
+require_once './module/cart/items.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -52,19 +59,21 @@
             <button type="checkout1" value="Checkout">Checkout</button>
             </form>
             <br>
+
+
+
+
+
+
+            <footer>
+                <object type="text/html" width="100%" height="280px" data="./footer2.html"></object>
+           </footer>
           </div>
 
 		
 
 
-        <!--footer-->
-        <footer>
-            <object
-                type="text/html"
-                width="100%"
-                height="310px"
-                data="./footer2.html"
-            ></object>
-        </footer>
+       
+        
 	</body>
 </html>
