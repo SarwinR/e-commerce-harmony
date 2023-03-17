@@ -54,7 +54,9 @@
                 </form>
             </div>
         </div>
-
+		<footer>
+			<object type="text/html" width="100%" height="310px" data="./footer2.html"></object>
+		</footer>
 		</div>
 		<script src="./js/header.js"></script>
 	</body>
