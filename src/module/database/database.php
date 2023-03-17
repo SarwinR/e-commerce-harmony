@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli("localhost", "geerish", "123456789", "harmony");
+$conn = new mysqli("localhost", "feiz", "1234", "harmony");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
