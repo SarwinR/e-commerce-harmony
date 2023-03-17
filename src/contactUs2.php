@@ -22,15 +22,22 @@
 			<div class="bottom-border-sidebar"></div>
 
 			<div class="icons">
-				<button class="profile-button">
-					<img src="../assets/icons8-customer.png" alt="Logo" />
-				</button>
-				<a class="profile"> Profile</a>
+			<button class="profile-button">
+                <a id="login_txt" href="./authPage.php" target="_top" style="padding: 10px">log in</a>
+                <a id="login_img" href="./profilePage.php" target="_top">
+                    <img src="../assets/icons8-customer.png" alt="Logo" />
+                  
+                </a>
+            </button>
 
-				<button class="cart-button">
-					<img src="../assets/icons8-shopping-cart.png" alt="Logo" />
-				</button>
-				<a class="cart"> Cart</a>
+            <button class="cart-button">
+                <a href="./cart.php" target="_top">
+                    
+                    <img src="../assets/icons8-shopping-cart.png"  alt="Logo" />
+                   
+                    
+                </a>
+            </button>
 			</div>
 		</div>
 		<div class="main">
@@ -49,5 +56,6 @@
         </div>
 
 		</div>
+		<script src="./js/header.js"></script>
 	</body>
 </html>
