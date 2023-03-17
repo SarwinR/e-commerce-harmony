@@ -98,6 +98,7 @@ if (isset($_POST['logout'])) {
 				"I've been trying to switch to more eco-friendly products for a while now, but I always found them to be too expensive. Harmony has made it easy and affordable for me to make the switch, and I couldn't be happier with my purchases."
 			</h3>
 			<br />
+			<br />
 			<h5>-Farhaan Nazirkhan</h5>
 		</div>
 
@@ -107,6 +108,7 @@ if (isset($_POST['logout'])) {
 
 			</h3>
 			<br />
+			<br />
 			<h5>-Levyn Kwong</h5>
 		</div>
 
@@ -114,6 +116,7 @@ if (isset($_POST['logout'])) {
 			<h3>
 				"I love the range of products available on Harmony. It's great to have so many eco-friendly options all in one place. Plus, the prices are really competitive, which makes it even easier to make the switch to more sustainable products."
 			</h3>
+			<br />
 			<br />
 			<h5>-Feiz Roojee</h5>
 		</div>

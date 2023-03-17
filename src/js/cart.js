@@ -1,31 +1,27 @@
-// cookies are stored in this format productID.quantity,productID.quantity,...
 
+// cookies are stored in this format productID.quantity,productID.quantity,...
 function add2Cart(productID, quantity = 1, msg="Item added to cart ") {
 	var cartString = getCookie("cart");
 	var cart = {};
 
-	// cart is empty
 	if (cartString == "") {
 		cart[productID] = quantity;
 	}
-	// cart is not empty
+	
 	else {
-		// populating the dictionary of cart items
+		
 		cart = string2Dict(cartString);
 
-		// the item to be added is not in the cart
 		if (cart[productID] == undefined) {
 			cart[productID] = quantity;
 		}
-		// the item to be added is already in the cart
+		
 		else {
 			cart[productID] = parseInt(cart[productID]) + parseInt(quantity);
 		}
 	}
 
-	// converting the dictionary to a string
 	var cartString = "cart=" + dict2String(cart);
-
 	setCookie(cartString, 30);
 
 	if (msg != "")
@@ -85,17 +81,17 @@ function removeProduct(productID, quantity) {
 
 	add2Cart(productID, -quantity, "");
 	updateTotal(); // Update the cart total
-  }
+}
   
-  // Increment product quantity
-  function incrementQuantity(button = "plus-btn", productID) {
+// Increment product quantity
+function incrementQuantity(button = "plus-btn", productID) {
 	const counter = button.parentElement;
 	var quantitySpan = counter.querySelector('.quantity');
 	var quantity = parseInt(quantitySpan.innerText);
 	var oldQty = quantity;
 	quantity++;
 	quantitySpan.innerText = quantity;
-	
+
 	add2Cart(productID, 1, "");
 	updatePrice(counter, oldQty, quantity); // Update the cart total and per item price
 }
@@ -113,9 +109,9 @@ function decrementQuantity(button = "minus-btn", productID) {
 		add2Cart(productID, -1, "");
 		updatePrice(counter, oldQty, quantity); // Update the cart total and per item price
 	}
-  }
+}
 
-  function updatePrice(counter, oldQty, newQty){
+function updatePrice(counter, oldQty, newQty){
 	var row = counter.closest("tr");
 	var priceTD = row.querySelector(".price");
 	var price = parseFloat(priceTD.innerText);
@@ -123,9 +119,9 @@ function decrementQuantity(button = "minus-btn", productID) {
 	priceTD.innerText = (indvPrice * newQty);
 
 	updateTotal();
-  }
+}
 
-  function updateTotal(){
+function updateTotal(){
 	var total = 0;
 	var rows = document.querySelectorAll("tr");
 	rows.forEach(function(row, index) {
@@ -137,6 +133,6 @@ function decrementQuantity(button = "minus-btn", productID) {
 		var priceTD = row.querySelector('.price');
 		var price = parseFloat(priceTD.innerText);
 		total += price;
-	  });
+		});
 	document.querySelector(".total-price").innerText = "Total Price: Rs " + total;
-  }
+}

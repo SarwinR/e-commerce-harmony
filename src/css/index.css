@@ -134,6 +134,7 @@ button:hover {
 	background-color: #eef3eb;
 	text-align: center;
 	padding: 20px;
+	height: 300px;
 	border: 2px solid #88bc52;
 	border-radius: 20px;
 }
