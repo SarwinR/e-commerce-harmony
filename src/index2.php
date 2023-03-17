@@ -36,7 +36,7 @@ if (isset($_POST['logout'])) {
         <a href="index2.php">Home</a>
         <a href="shop2.html">Shop</a>
         <a href="contactUs2.php">Contact</a>
-        <a href="#">About</a>
+        <a href="about2.html">About</a>
         <div class="bottom-border-sidebar"></div>
 
         <div class="icons">
@@ -61,7 +61,7 @@ if (isset($_POST['logout'])) {
     </div>
     <div class="main">
         <div class="background-container">
-            <img src="../assets/home/background2.jpg" alt="food">
+            <img src="../assets/home/background2.jpg" alt="product">
             <div class="center-text">
                 <h1 id="background-text">Welcome to Harmony</h1>
             </div>
