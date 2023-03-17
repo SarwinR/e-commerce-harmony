@@ -12,7 +12,7 @@ require_once './module/cart/items.php';
 		<title>Shop</title>
 	
         <link rel="stylesheet" href="./css/cart2.css">
-		<script src="./js/shop.js"></script>
+		<script src="./js/cart.js"></script>
 	</head>
 	<body>
 		<div class="sidebar">
@@ -59,28 +59,20 @@ require_once './module/cart/items.php';
           
             </table>
           
-            <div class="total-price">Rs</div>
+            <div class="total-price"></div>
             <br>
           
-            <form action="checkout.html" method="post">
+            <form action="checkout2.html" method="post">
             <button type="checkout1" value="Checkout">Checkout</button>
             </form>
             <br>
 
-
-
-
-
-
             <footer>
                 <object type="text/html" width="100%" height="280px" data="./footer2.html"></object>
            </footer>
-          </div>
+        </div>
 
-		
-
-
-       
-		  <script src="./js/header.js"></script>
+        <script>updateTotal();</script>
+		<script src="./js/header.js"></script>
 	</body>
 </html>

@@ -30,7 +30,7 @@ require_once './module/cart/items.php';
 
   </table>
 
-  <div class="total-price">Rs</div>
+  <div class="total-price"></div>
   <br>
 
   <form action="checkout.html" method="post">
